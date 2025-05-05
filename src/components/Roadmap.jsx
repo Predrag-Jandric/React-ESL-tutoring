@@ -1,7 +1,6 @@
-import leetcode from "/assets/roadmap/leetcode.png";
-import projects from "/assets/roadmap/projects.png";
-import job from "/assets/roadmap/job.png";
-import mern from "/assets/roadmap/mern.png";
+import classroom from "/assets/roadmap/classroom.png";
+import message from "/assets/roadmap/message.png";
+import demo from "/assets/roadmap/demo.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import {
   generalVariants,
@@ -9,40 +8,36 @@ import {
   roadmapArrowVariants,
 } from "../utils/animations.js";
 import { motion } from "framer-motion";
-import { PiSealCheckFill } from "react-icons/pi";
 
 export default function Roadmap() {
   return (
     <motion.section
-      className="flex flex-col items-center overflow-x-auto bg-bgcolor px-6 py-16 shadow-md"
+      className="flex flex-col items-center overflow-x-auto bg-gradient-to-br from-[#293C66] to-[#3A5692] px-6 shadow-md"
       variants={generalVariants}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
       id="roadmap"
     >
-      <div className="container flex flex-col items-center justify-center gap-8 bg-transparent px-0 text-white shadow-none md:flex-row md:gap-5 lg:gap-8">
+      <div className="container flex min-h-[23rem] flex-col items-center justify-center gap-8 bg-transparent py-16 text-white shadow-none md:flex-row">
         <motion.article
           variants={roadmapVariants}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           custom={0.35}
-          className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
+          className="flex flex-col items-center gap-8 text-center md:flex-row"
         >
-          <div className="relative flex w-fit flex-col items-center justify-center gap-3">
-            <p className="text-sm font-semibold italic">Q1 2025</p>
+          <div className="flex w-fit flex-col items-center justify-center gap-3">
+            <p className="text-sm font-semibold italic">Step 1</p>
             <img
-              className="size-32 object-contain md:size-20 lg:size-32"
-              src={projects}
-              alt="symbol of goal"
+              className="size-32 object-contain"
+              src={message}
+              alt="missing"
             />
-            <p className="text-body">
-              Finish 3 mega <br /> projects{" "}
-            </p>
-            <PiSealCheckFill className="size-10 text-green-400 absolute top-4 right-0" />
+            <p className="text-body">Contact me</p>
           </div>
-         
+
           <motion.span
             variants={roadmapArrowVariants}
             initial="initial"
@@ -63,19 +58,12 @@ export default function Roadmap() {
           whileInView="animate"
           custom={0.65}
           viewport={{ once: true }}
-          className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
+          className="flex flex-col items-center gap-8 text-center md:flex-row"
         >
           <div className="flex w-fit flex-col items-center justify-center gap-3">
-            <p className="text-sm font-semibold italic">Q2 2025</p>
-            <img
-              className="size-32 object-contain md:size-20 lg:size-32"
-              src={leetcode}
-              alt="symbol of goal"
-            />
-            <p className="text-body">
-              Do 200 code
-              <br /> challenges
-            </p>
+            <p className="text-sm font-semibold italic">Step 2</p>
+            <img className="size-32 object-contain" src={demo} alt="missing" />
+            <p className="text-body">Try free demo lesson</p>
           </div>
 
           <motion.span
@@ -98,52 +86,16 @@ export default function Roadmap() {
           whileInView="animate"
           viewport={{ once: true }}
           custom={1.05}
-          className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-5 lg:gap-8"
+          className="flex flex-col items-center gap-8 text-center md:flex-row"
         >
           <div className="flex w-fit flex-col items-center justify-center gap-3">
-            <p className="text-sm font-semibold italic">Q3 2025</p>
+            <p className="text-sm font-semibold italic">Step 3</p>
             <img
-              className="size-32 object-contain md:size-20 lg:size-32"
-              src={job}
-              alt="symbol of goal"
+              className="size-32 object-contain"
+              src={classroom}
+              alt="missing"
             />
-            <p className="w-24 text-body">
-              Appy and <br /> land a job
-            </p>
-          </div>
-          <motion.span
-            variants={roadmapArrowVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={1.2}
-          >
-            <HiOutlineArrowLongRight
-              size={40}
-              className="rotate-90 text-white md:rotate-0"
-            />
-          </motion.span>
-        </motion.article>
-
-        <motion.article
-          variants={roadmapVariants}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          custom={1.35}
-          className="flex items-center gap-8 text-center md:gap-5 lg:gap-8"
-        >
-          <div className="flex w-fit flex-col items-center justify-center gap-3">
-            <p className="text-sm font-semibold italic">2026+</p>
-            <img
-              className="size-32 object-contain md:size-20 lg:size-32"
-              src={mern}
-              alt="symbol of goal"
-            />
-            <p className="text-body">
-              Continue learning
-              <br /> MERN stack
-            </p>
+            <p className="text-body">Choose package & start</p>
           </div>
         </motion.article>
       </div>

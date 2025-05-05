@@ -27,7 +27,7 @@ export default {
       },
       fontSize: {
         headings: "1.5rem",
-        body: "1.05rem",
+        body: "1.07rem",
       },
       borderRadius: {
         custom: "5px",

@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/projects/Projects";
-import Roadmap from "./components/Roadmap";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
@@ -12,6 +11,8 @@ import ProjectDetails from "./components/projects/ProjectDetails";
 import ScrollToTop from "./utils/ScrollToTop";
 import ScrollToHash from "./utils/ScrollToHash";
 import { FormspreeProvider } from "@formspree/react";
+
+import Roadmap from "./components/Roadmap";
 
 export default function App() {
   return (

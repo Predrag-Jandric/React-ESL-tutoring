@@ -1,15 +1,7 @@
-- add CV
+# Tutoring app
 
-========== FOR GITHUB PROFILE DESC ===========
+This project is my personal React website designed to offer my language mentorship services.
 
-- add Why I Code section to your github
-- add emotional intelligence as strong point
+Despite loving to write long and extensive readmes for all my projects, and provide links to demos and images, I left this readme very short and without demo link on purpose.
 
-hero pattern got from
-https://patternico.com/#meM0W5EUKUjVsnNY
-
-3d got from
-https://sketchfab.com
-
-3rd party used to make form functionable
-https://formspree.io/
+---

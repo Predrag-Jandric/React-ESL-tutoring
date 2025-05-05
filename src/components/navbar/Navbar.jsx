@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 z-50 flex h-[8vh] w-full items-center justify-center bg-dark bg-opacity-95 backdrop-blur-sm">
+      <nav className="fixed left-0 right-0 top-0 z-50 flex h-16 w-full items-center justify-center bg-dark bg-opacity-95 backdrop-blur-sm">
         <ul className="relative hidden items-center justify-center gap-0 transition duration-200 ease-in-out sm:flex">
           {navLinks.map((link, index) => (
             <li key={index} className="group relative z-10 flex w-full">
