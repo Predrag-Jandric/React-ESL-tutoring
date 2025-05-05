@@ -2,65 +2,138 @@
 // MODIFY MAP DATA HERE AND NOWHERE ELSE.
 
 export const navLinks = [
-  { href: "staucimo", label: "Šta učimo" },
-  { href: "vizija", label: "Vizija" },
-  { href: "strategija", label: "Strategija" },
-  { href: "cestaPitanja", label: "Česta Pitanja" },
-  { href: "kontakt", label: "Kontakt" },
+  { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
+  { href: "roadmap", label: "Roadmap" },
+  { href: "testimonials", label: "Testimonials" },
+  { href: "contact", label: "Contact" },
+];
+
+export const mobilenavLinks = [
+  { href: "about", label: "About" },
+  { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
+  { href: "roadmap", label: "Roadmap" },
+  { href: "testimonials", label: "Testimonials" },
+  { href: "FAQ", label: "FAQ" },
+  { href: "contact", label: "Contact" },
+];
+
+export const skillsMap = [
+  { name: "JavaScript", skillsImageUrl: "/assets/skills/js.png" },
+  { name: "React", skillsImageUrl: "/assets/skills/react.png" },
+  {
+    name: "Redux Toolkit",
+    skillsImageUrl: "/assets/skills/redux-toolkit.png",
+  },
+  { name: "Next.js", skillsImageUrl: "/assets/skills/nextjs.png" },
+  { name: "Tailwind", skillsImageUrl: "/assets/skills/tailwind.png" },
+  { name: "Node.js", skillsImageUrl: "/assets/skills/nodejs.png" },
+  { name: "Mongo DB", skillsImageUrl: "/assets/skills/mongodb.png" },
+  { name: "Html", skillsImageUrl: "/assets/skills/html.png" },
+  { name: "Css", skillsImageUrl: "/assets/skills/css.png" },
+  { name: "Git", skillsImageUrl: "/assets/skills/git.png" },
+];
+
+export const projectsMap = [
+  {
+    name: "Split Smart",
+    description:
+      "Split Smart is a dashboard type of application that helps users manage shared expenses with friends, family, or roommates. Users can create groups, add expenses, and track balances. The app calculates the ways to settle debts among group members.",
+    projectsImageUrl: "/assets/projects/splitsmartprev.png",
+    flowchart: [
+      "/assets/projects/splitsmartflowchartone.png",
+      "/assets/projects/splitsmartflowcharttwo.png",
+    ],
+    effort: "Team project",
+    TechUsed: ["React, ", "Tailwind, ", "Redux Toolkit, ", "React Router. "],
+    githubLink: "https://github.com/Predrag-Jandric/Split-Smart",
+    previewLink: "https://split-smart.netlify.app/",
+    id: 3456267564,
+    buildTime: "7 weeks",
+    teamSize: "5 people",
+    type: "Front-end only",
+    about: `Split Smart is an application that aims to make splitting expenses among friends, family, or colleagues easy. Whether planning a trip, organizing a group dinner, or managing shared expenses, Split Smart helps you keep track of who owes what and ensures that everyone pays their equal or unequal share. Your data is automatically saved in your browser locally so that you can always come back to where you left off.\n\nBuilding Split Smart taught me valuable lessons about listening to feedback and improving the app with in-depth testing. I also learned the importance of clear documentation for future development and maintenance. One of the major technical challenges was implementing the logic for accurate contribution changes for each member and ensuring that the app was user-friendly and intuitive.\n\nOur team consisted of one Product Owner, two Developers, one UX/UI Designer, and one Scrum Master. We followed Agile methodologies, with regular sprints, iterations, and backlog management. Design and implementation decisions were made collaboratively, ensuring a simple and efficient approach.\n\nMy role included implementing complex logic, managing state with Redux, turning designs into a fully responsive user interface, fixing bugs and optimizing. I also worked on integrating animations and charts, writing documentation, testing and implementing the dark mode.`,
+    howItWorksList: `Users can:\n1. Create groups for different events or activities.\n2. Add members to the groups and assign expenses.\n3. Track total budget, expenses, and remaining budget.\n4. Customize contributions for each member.\n5. Edit group details, such as name, description, and image.\n6. Search for groups using the search bar.\n7. Toggle between light and dark modes for a comfortable viewing experience.`,
+    howItWorksText: `We used React as the main framework for building the user interface and logic. Redux Toolkit for global state management. React Router for page switching. Tailwind CSS for styling. Framer Motion for animations. Recharts for pie chart visualization. React Icons and React Toastify for icons and notifications.`,
+  },
+];
+
+export const testimonialsMap = [
+  {
+    testimonialsImageUrl: "/assets/testimonials/jim.jpg",
+    name: "Jim Medlock",
+    job: "Founder of Chingu.io",
+    message:
+      "In the short time Predrag has been with Chingu he has left his mark as an active participant in multiple of our 6-week remote team projects, as a presenter at our weekly Spotlight sessions, and as a contributor of suggestions on how we can improve.\n\nHe is an excellent Developer, but also understands the importance of teamwork and is a teammate everyone has come to trust and value.In ",
+  },
+  {
+    testimonialsImageUrl: "/assets/testimonials/fari.jpg",
+    name: "Farzaneh Falakrou",
+    job: "UI/UX Designer",
+    message:
+      "Predrag and I were part of a dedicated team on a ‘‘Chingu’’ project, where we worked together to build an app from the scratch in six weeks. As a developer, he made important contributions with his technical skills and dedication.\n\nPredrag showed a good understanding of development, followed our design guidelines, and kept communication open. His active participation and constructive feedback enhanced our teamwork.",
+  },
+  {
+    testimonialsImageUrl: "/assets/testimonials/afrah.jpg",
+    name: "Afrah Ali",
+    job: "Scrum Master",
+    message:
+      "I had the pleasure of working alongside Predrag at Chingu, where we collaborated on developing an app from the ground up. As the Scrum Master and Predrag as the developer, I was consistently impressed by his dedication to delivering high-quality work. His commitment was unparalleled, always ensuring that tasks were completed to the highest standard.\n\nPredrag was incredibly supportive when team members encountered challenges, often creating video tutorials to explain complex concepts.",
+  },
+  {
+    testimonialsImageUrl: "/assets/testimonials/anitta.jpg",
+    name: "Anita Boakye-Yiadom",
+    job: "Product owner and Agile coach",
+    message: `Predrag was an outstanding front-end developer in my Chingu scrum team. As a scrum master during the 6-week Solar Panel Planner app project, his problem-solving skills and attention to detail were instrumental. \n\nPredrag is a committed and dedicated professional who constantly shows outstanding leadership with teammates as a senior developer, guiding and initiating pair programming sessions.`,
+  },
 ];
 
 export const faqMap = [
   {
-    question: "Da li mi je potrebno predznanje iz IT oblasti?",
-    answer:
-      "Ne uopšte. U programiranju se uči način razmišljanja, stoga časove prilagođavam vašem nivou, bilo da počinjemo od nule ili da već imate neko znanje, napredak je zagarantovan. Počinjemo od osnova HTML i CSS, zatim ubrzo prelazimo na JavaScript pa potom React i Tailwind, koja je najpopularnija i zastupljenija front-end kombinacija. Svi ovi jezici se samo nadograđuju jedan na drugi.",
-  },
-
-  {
-    question: "Šta zapravo učimo na časovima?",
-    answer:
-      "Časovi se sastoje od kombinacije više aktivnosti: teorije, primene znanja, diskusije bilo kakvih nedoumica i domaćeg rada prilagodjenog vama, kako bi se sigurno savladala tematika. Posle toga zajedno ulazimo u svet open source projekata koji idealno simuliraju rad u realnom svetu.",
+    question: "What makes you stand out from other developers?",
+    answer: `- I have a strong drive to keep learning, which is essential in a fast-paced, ever-evolving tech field.\n- I bring diverse experience from working on various projects with different teams, always maintaining a solution-driven mindset.\n- I’m disciplined, focused on writing clean, maintainable code, and committed to promoting a positive, team-oriented work environment.\n- I  enjoy writing documentation, giving presentations, and contributing to a collaborative learning culture. For me, these things are not a chore.`,
   },
   {
-    question: "Koliko će mi trebati vremena da mogu sam da napravim sajt?",
+    question:
+      "How much experience do you have as a frontend developer, and what kinds of projects have you worked on?",
     answer:
-      "Za 3 meseca posvećenog rada, totalni početnik može napraviti statički web sajt sa nekim osnovnim interakcijama i postaviti ga na internet gde će svako moći da ga poseti. Uz moju pomoć, ovakav websajt vam može služiti kao digitalna vizit karta i može vas predstavljati u bilo kojoj sferi života, čak i van IT-ja, i pomoći vam da se istaknete od drugih. Ovakav projekat se ne naplaćuje dodatno, već ga zajedno pravimo kroz časove učeći, uz moje smernice i pomoć gde zatreba.",
+      "I’ve been coding for a few years and have worked on 100+ projects (available on my GitHub) of various sizes and complexity. I follow scalable, responsive, pixel-perfect design principles and prioritize best practices to ensure code quality, readability, and long-term maintainability.",
   },
   {
-    question: "Kakve ćemo projekte praviti?",
+    question: "Do you have experience with [specific framework/tool]?",
     answer:
-      "Počećemo od jednostavnih domaćih gde dobijate gotov dizajn koji treba da napišete u kodu, zatim prelazimo na osnovne logičke zadatke poput to-do aplikacija. Nakon toga radimo na naprednim logičkim konceptima, pa sve do velikih projekata na kojima radi više različitih programera. Brzinu napretka prilagođavamo tako da prelazimo na sledeći nivo tek kada smo sigurni u svoje mogućnosti.",
+      "I may not always have direct experience with every tool, but I’m a quick learner and eager to expand my skill set to meet project requirements. I think programming is not about syntax memorisation but problem solving skills and concept understanding. Staying curious, continuously learning, and keeping up with the latest tech trends is a key part of my approach to development.",
   },
   {
-    question: "Da li je front-end pravac programiranja dobar izbor?",
+    question:
+      "Do you have experience with full-stack development or backend technologies?",
     answer:
-      "Naravno. Programiranje pruža širok spektar mogućnosti. Možete da radite za sebe kao frilenser na globalnom ili lokalnom tržištu, da pravite web sajtove iz hobija za sebe, svoje prijatelje i open-source zajednicu, ili da radite za neku od mnogobrojnih firmi, bilo od kuće (remote) ili iz kancelarije. Najbolje od svega je da koncepti programiranja koje ste stekli ostaju sa vama zauvek i imaju primenu u mnogim drugim sferama života, jer je programiranje, u svojoj srži, veština rešavanja problema.",
+      "While most of my experience in in front-end development, I have a solid understanding of backend technologies like Node.js, Express, and MongoDB databases. I’m always working on improving these skills.",
   },
   {
-    question: "Kada vremenski možemo da održavamo časove?",
+    question: "How do you work in teams, and how do you respond to feedback?",
     answer:
-      "Kada vama odgovara, sve je stvar dogovora. Nije nikakav problem ni pomeriti zakazan termin tako da se uklapa u vaš novonastali raspored posla, porodice ili drugih obaveza. Sve teme koje budemo pokrili uvek ćete moći da se vratite i ponovite uz obezbeđene resurse za vežbanje.",
+      "I’ve worked on open-source projects with developers from diverse backgrounds, often taking on the role of lead developer which has helped me become a better team player. I value collaboration, communication, and I adapt quickly to different team dynamics. I appreciate constructive feedback because it’s an opportunity to improve and grow as a developer. When my colleagues faced challenges, I actively guided them by sharing my knowledge, and helping them troubleshoot issues, ensuring we all grew together.",
   },
   {
-    question: "Koja je cena časova?",
+    question: "How do you meet deadlines and handle challenges?",
     answer:
-      "Cena je prilagođena vama, što znači da je niska kada počinjemo od jednostavnih stvari, a blago raste kako prelazimo na naprednije teme. Ako se odlučite za paket časova koji plaćate odjednom, dobijate besplatne časove kao i mnoge druge bonuse.",
-  },
-  {
-    question: "Zašto da izaberem baš vas?",
-    answer:
-      "Posvećen sam pružanju vrednosti klijentu za uloženi novac, svojom sveobuhvatnom metodom rada. U svom prethodnom poslu sam takođe bio mentor, sa zadatkom da klijente dovedem do rezultata, a ne da samo iznajmim svoje vreme. Tu sam za podršku i van časova, ako naiđete na neki problem. Dajem domaće zadatke kroz koje usavršavate stečena znanja i uvodim vas u open-source zajednicu, gde ćete imati priliku da sarađujete sa programerima širom sveta, praveći web sajtove. Steći ćete iskustvo u menadžmentu aplikacije, online sastancima, prezentacijama, timskom donošenju odluka, komunikaciji sa dizajnerima i stejkholderima.",
+      "I think that efficient team communication is key to setting managable deadlines and achieving them in time. I’ve worked with the Scrum framework, which encourages collaboration between the development team, Scrum Master, and Product Owner to stay on track and deliver on time for the end user. When challenges arise, my go-to approach is to break the problem into smaller, more manageable pieces. Usually, stepping away for a quick walk clears my mind and brings fresh ideas. In the next team brainstorming session, we then all present our solutions and choose the best combination of ideas together.",
   },
 ];
 
-export const staucimoMap = [
-  { name: "HTML", staucimoImageUrl: "/assets/staucimo/html.png" },
-  { name: "CSS", staucimoImageUrl: "/assets/staucimo/css.png" },
-  { name: "JavaScript", staucimoImageUrl: "/assets/staucimo/js.png" },
-  { name: "Git / Github", staucimoImageUrl: "/assets/staucimo/git.png" },
-  { name: "React.js", staucimoImageUrl: "/assets/staucimo/react.png" },
+export const footerMap = [
   {
-    name: "Redux",
-    staucimoImageUrl: "/assets/staucimo/redux-toolkit.png",
+    linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
+    footerImageUrl: "/assets/all-social-icons/linkedIn.png",
+  },
+  {
+    linkUrl: "https://github.com/Predrag-Jandric",
+    footerImageUrl: "/assets/all-social-icons/github-footer.png",
+  },
+  {
+    linkUrl: "https://www.youtube.com/@predragjandric/videos",
+    footerImageUrl: "/assets/all-social-icons/youtube.png",
   },
 ];

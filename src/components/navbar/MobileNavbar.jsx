@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
-import useScrollTo from "../../utils/useScrollTo";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { navLinks } from "../../utils/data";
+import { mobilenavLinks } from "../../utils/data";
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
@@ -31,7 +30,7 @@ function useMenuAnimation(isOpen) {
           ["nav", { transform: "translateX(100%)" }, { at: "-0.1" }],
         ];
 
-    // Button animations are independent
+    // button animations are independent
     const buttonAnimations = [
       [
         "path.top",
@@ -50,7 +49,7 @@ function useMenuAnimation(isOpen) {
       ],
     ];
 
-    // Animate the button and menu separately
+    // animate the button and menu separately
     animate([...buttonAnimations]);
     animate([...menuAnimations]);
   }, [animate, isOpen]);
@@ -59,7 +58,7 @@ function useMenuAnimation(isOpen) {
 }
 
 export default function MobileNavbar({ isOpen, setIsOpen }) {
-  const scrollToSection = useScrollTo(150);
+  // const scrollToSection = useScrollTo(170);
   const [clickable, setClickable] = useState(true);
   const scope = useMenuAnimation(isOpen);
 
@@ -84,6 +83,20 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
     };
   }, [isOpen, setIsOpen]);
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const element = document.getElementById(href);
+    if (element) {
+      const topPosition = element.offsetTop - 230;
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth",
+      });
+      window.history.pushState(null, null, `#${href}`);
+    }
+  };
+
   const handleToggle = () => {
     if (!clickable) return;
     setClickable(false);
@@ -93,10 +106,10 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
 
   return (
     <div ref={scope}>
-      <nav className="fixed h-full top-0 left-0 w-full bg-gradient-to-br from-[#293C66] to-[#3A5692] pt-20 z-50 translate-x-full transition-colors">
-        <ul className="flex flex-col gap-y-6 px-8 relative">
+      <nav className="fixed left-0 top-0 z-50 h-full w-full translate-x-full bg-bgcolor bg-opacity-95 pt-20 backdrop-blur-sm transition-colors">
+        <ul className="relative flex flex-col gap-y-6 px-8">
           <motion.div
-            className="absolute right-[5%] -top-[16%] cursor-pointer"
+            className="absolute -top-[10%] right-[5%] cursor-pointer"
             onClick={handleToggle}
             initial={{ scale: 1, opacity: 1 }}
             animate={
@@ -106,23 +119,19 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
             }
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <IoCloseOutline className="size-12 hover:text-primary transition-colors" />
+            <IoCloseOutline className="size-12 transition-colors hover:text-primary" />
           </motion.div>
-          {navLinks.map((link, index) => (
-            <li key={index} className="relative flex w-full z-10 group">
+          {mobilenavLinks.map((link, index) => (
+            <li key={index} className="group relative z-10 flex w-full">
               <a
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.href);
-                  setIsOpen(false);
-                }}
-                className="text-white text-3xl w-full py-2 px-5 cursor-pointer transition ease-in-out duration-200 relative group-hover:before:scale-100"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="relative w-full cursor-pointer px-5 py-2 text-3xl text-white transition duration-200 ease-in-out hover:text-primary group-hover:before:scale-100"
               >
                 {link.label}
               </a>
-              <span className="absolute top-full left-5 w-32 h-[3px] bg-primary scale-x-0 origin-left z-[-1] transition-transform ease-in-out duration-300 group-hover:scale-x-100"></span>
+              <span className="absolute left-5 top-full z-[-1] h-1 w-32 origin-left scale-x-0 bg-primary transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </li>
           ))}
         </ul>

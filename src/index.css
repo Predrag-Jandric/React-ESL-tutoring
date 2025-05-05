@@ -4,19 +4,54 @@
 
 @layer components {
   .btn {
-    @apply bg-primary border border-transparent font-semibold hover:bg-primaryHover px-6 py-2 flex text-center items-center justify-center w-40 shadow-md transition duration-300 ease-in-out hover:shadow-none;
+    @apply flex w-40 items-center justify-center border border-transparent bg-primary px-6 py-2 text-center font-semibold shadow-md transition duration-300 ease-in-out hover:bg-primaryHover hover:shadow-none;
   }
   .title {
-    @apply text-[40px] xs:text-5xl mt-16 mb-6 font-bold text-grayText text-center tracking-wider relative w-fit mx-auto font-headings;
+    @apply relative mx-auto mb-6 mt-16 w-fit text-center font-headings text-[40px] font-bold tracking-wider text-grayText xs:text-5xl;
     /* mt-28 mb-7 */
   }
   .title::after {
     content: "";
-    @apply absolute bottom-[-50%] left-1/2 w-20 h-[0.2rem] bg-primary;
+    @apply absolute bottom-[-50%] left-1/2 h-1 w-20 bg-primary;
     transform: translate(-50%);
   }
   .container {
-    @apply bg-pureWhite max-w-[70rem] shadow-md sm:p-10 p-6;
+    @apply max-w-[70rem] bg-pureWhite p-6 text-dark shadow-md sm:p-10;
+  }
+  .formInput {
+    @apply mb-4 w-full rounded-custom border border-stone-300 bg-slate-100 p-2 text-dark;
+  }
+}
+
+.specialLink {
+  color: #2e72b2;
+  text-decoration: underline;
+}
+
+.specialLink:hover {
+  background: radial-gradient(
+    circle,
+    #2e72b2 0%,
+    #3c87cd 16%,
+    #d8ad48 32%,
+    #f7b42d 49%,
+    #d8ad48 66%,
+    #3c87cd 84%,
+    #2e72b2 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 2s ease-in-out infinite alternate;
+  background-size: 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
   }
 }
 

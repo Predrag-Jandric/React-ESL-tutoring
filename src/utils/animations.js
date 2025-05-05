@@ -13,8 +13,8 @@ export const heroVariants = {
   },
 };
 
-// animations for staucimo section
-export const staucimoVariants = {
+// animations for SKILLS section
+export const skillsVariants = {
   initial: {
     opacity: 0,
     scale: 0,
@@ -24,15 +24,33 @@ export const staucimoVariants = {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.2,
-        delay: 0.140 * index,
+        duration: 0.25,
+        delay: 0.15 * index,
       },
     };
   },
 };
 
-// strategija variants
-export const strategijaVariants = {
+// animations for PROJECTS section
+export const projectsVariants = {
+  initial: {
+    y: 70,
+    opacity: 0,
+  },
+  animate: (index) => {
+    return {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0.05 * index,
+      },
+    };
+  },
+};
+
+// ROADMAP variants
+export const roadmapVariants = {
   initial: {
     opacity: 0,
   },
@@ -47,8 +65,8 @@ export const strategijaVariants = {
   },
 };
 
-// strategija ARROW variants
-export const strategijaArrowVariants = {
+// ROADMAP ARROW variants
+export const roadmapArrowVariants = {
   initial: () => {
     const isMobile = window.innerWidth <= 768;
     return {

@@ -3,28 +3,23 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      textStroke: {
-        1: "1px",
-        2: "2px",
-      },
-      textStrokeColor: {
-        black: "#000",
-      },
       colors: {
         // solid colors
         pureWhite: "#ffffff",
         pureBlack: "#000000",
 
-        // solid color variables
+        // variables
         white: "#f1f1f1",
         grayText: "#575b60",
-        dark: "#2d3142",
+        dark: "#292D3D",
+
+        bgcolor: "#2F4575", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
 
         // primary colors
-        primary: "#33C2FF",
-        primaryHover: "#0AB6FF",
+        primary: "#ffc654",
+        primaryHover: "#FFD685",
       },
-
+      // Nunito
       // "Comic Sans MS" for testing
       fontFamily: {
         headings: ["Work Sans", "sans-serif"],
@@ -46,20 +41,10 @@ export default {
       xl: "1280px",
       xxl: "1536px",
     },
-  },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        ".text-stroke": {
-          "text-shadow": `
-            -1px -1px 0 #475569,  
-            1px -1px 0 #475569,
-            -1px 1px 0 #475569,
-            1px 1px 0 #475569
-          `,
-        },
-      };
-      addUtilities(newUtilities, ["responsive", "hover"]);
+    backgroundSize: {
+      bigzoom: "180%",
+      normalzoom: "140%",
     },
-  ],
+  },
+  plugins: [],
 };
