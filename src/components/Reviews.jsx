@@ -19,6 +19,7 @@ export default function Reviews() {
             <span className="text-4xl font-semibold">
               <CountUp
                 enableScrollSpy
+                scrollSpyOnce={true}
                 scrollSpyDelay={300}
                 start={0}
                 end={6}
@@ -32,9 +33,10 @@ export default function Reviews() {
             <span className="text-4xl font-semibold">
               <CountUp
                 enableScrollSpy
+                scrollSpyOnce={true}
                 scrollSpyDelay={300}
                 start={0}
-                end={6000}
+                end={8000}
                 duration={3}
                 separator=""
                 size={200}
@@ -47,9 +49,10 @@ export default function Reviews() {
             <span className="text-4xl font-semibold">
               <CountUp
                 enableScrollSpy
+                scrollSpyOnce={true}
                 scrollSpyDelay={300}
                 start={0}
-                end={1000}
+                end={1200}
                 duration={3}
                 separator=""
                 size={200}
@@ -62,7 +65,7 @@ export default function Reviews() {
 
         {/* Video under the numbers */}
         <video
-          className="w-fit rounded-custom  bg-white object-cover shadow-sm md:max-w-[45.5rem]"
+          className="w-fit rounded-custom bg-white object-cover shadow-sm md:max-w-[45.5rem]"
           src="/assets/reviews/example.mp4"
           poster="/assets/reviews/reviewsposter.png"
           playsInline

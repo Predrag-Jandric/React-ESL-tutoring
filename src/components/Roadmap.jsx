@@ -28,10 +28,10 @@ export default function Roadmap() {
           custom={0.35}
           className="flex flex-col items-center gap-8 text-center md:flex-row"
         >
-          <div className="flex w-fit flex-col items-center justify-center gap-3">
+          <div className="flex shrink-0 w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Step 1</p>
             <img
-              className="size-32 object-contain"
+              className="size-28  object-contain"
               src={message}
               alt="missing"
             />
@@ -60,9 +60,9 @@ export default function Roadmap() {
           viewport={{ once: true }}
           className="flex flex-col items-center gap-8 text-center md:flex-row"
         >
-          <div className="flex w-fit flex-col items-center justify-center gap-3">
+          <div className="flex w-fit shrink-0 flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Step 2</p>
-            <img className="size-32 object-contain" src={demo} alt="missing" />
+            <img className="size-28 object-contain" src={demo} alt="missing" />
             <p className="text-body">Try free demo lesson</p>
           </div>
 
@@ -88,10 +88,10 @@ export default function Roadmap() {
           custom={1.05}
           className="flex flex-col items-center gap-8 text-center md:flex-row"
         >
-          <div className="flex w-fit flex-col items-center justify-center gap-3">
+          <div className="flex shrink-0 w-fit flex-col items-center justify-center gap-3">
             <p className="text-sm font-semibold italic">Step 3</p>
             <img
-              className="size-32 object-contain"
+              className="size-28 object-contain"
               src={classroom}
               alt="missing"
             />

@@ -5,8 +5,8 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/projects/Projects";
 import Reviews from "./components/Reviews";
-import Faq from "./components/Faq";
-import Footer from "./components/Footer";
+import Questions from "./components/Questions";
+import Contact from "./components/Contact";
 import ProjectDetails from "./components/projects/ProjectDetails";
 import ScrollToTop from "./utils/ScrollToTop";
 import ScrollToHash from "./utils/ScrollToHash";
@@ -22,7 +22,7 @@ export default function App() {
           path="/"
           element={
             <main className="m-0 box-border flex list-none flex-col gap-10 scroll-smooth p-0 font-body no-underline outline-none">
-              {/* <Hero />
+              <Hero />
                 <Title text="About" />
                 <About />
                 <Title text="Skills" />
@@ -30,12 +30,12 @@ export default function App() {
                 <Title text="Projects" />
                 <Projects />
                 <Title text="Roadmap" />
-                <Roadmap /> */}
+                <Roadmap />
                 <Title text="Reviews" />
                 <Reviews />
-                <Title text="FAQ" />
-                {/* <Faq /> */}
-                {/* <Footer /> */}
+                <Title text="Questions" />
+                <Questions />
+                <Contact />
             </main>
           }
         />

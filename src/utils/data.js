@@ -15,7 +15,7 @@ export const mobilenavLinks = [
   { href: "projects", label: "Projects" },
   { href: "roadmap", label: "Roadmap" },
   { href: "reviews", label: "Reviews" },
-  { href: "FAQ", label: "FAQ" },
+  { href: "questions", label: "Questions" },
   { href: "contact", label: "Contact" },
 ];
 
@@ -59,7 +59,7 @@ export const projectsMap = [
   },
 ];
 
-export const faqMap = [
+export const questionsMap = [
   {
     question: "What makes you stand out from other developers?",
     answer: `- I have a strong drive to keep learning, which is essential in a fast-paced, ever-evolving tech field.\n- I bring diverse experience from working on various projects with different teams, always maintaining a solution-driven mindset.\n- I’m disciplined, focused on writing clean, maintainable code, and committed to promoting a positive, team-oriented work environment.\n- I  enjoy writing documentation, giving presentations, and contributing to a collaborative learning culture. For me, these things are not a chore.`,
@@ -90,20 +90,5 @@ export const faqMap = [
     question: "How do you meet deadlines and handle challenges?",
     answer:
       "I think that efficient team communication is key to setting managable deadlines and achieving them in time. I’ve worked with the Scrum framework, which encourages collaboration between the development team, Scrum Master, and Product Owner to stay on track and deliver on time for the end user. When challenges arise, my go-to approach is to break the problem into smaller, more manageable pieces. Usually, stepping away for a quick walk clears my mind and brings fresh ideas. In the next team brainstorming session, we then all present our solutions and choose the best combination of ideas together.",
-  },
-];
-
-export const footerMap = [
-  {
-    linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
-    footerImageUrl: "/assets/all-social-icons/linkedIn.png",
-  },
-  {
-    linkUrl: "https://github.com/Predrag-Jandric",
-    footerImageUrl: "/assets/all-social-icons/github-footer.png",
-  },
-  {
-    linkUrl: "https://www.youtube.com/@predragjandric/videos",
-    footerImageUrl: "/assets/all-social-icons/youtube.png",
   },
 ];

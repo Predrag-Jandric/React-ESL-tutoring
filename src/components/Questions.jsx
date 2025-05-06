@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
-import { faqMap } from "../utils/data.js";
+import { questionsMap } from "../utils/data.js";
 
-export default function Faq() {
+export default function Questions() {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleFAQ = (index) => {
+  const toggleQuestion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
@@ -16,12 +16,12 @@ export default function Faq() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      id="FAQ"
+      id="questions"
       className="mx-auto w-full px-4 text-grayText xs:px-6 lg:w-[65rem]"
     >
-      {faqMap.map((faq, index) => {
+      {questionsMap.map((question, index) => {
         const isOpen = activeIndex === index;
-        const formattedAnswer = `\n${faq.answer}\n`.split("\n");
+        const formattedAnswer = `\n${question.answer}\n`.split("\n");
 
         return (
           <div
@@ -30,9 +30,9 @@ export default function Faq() {
           >
             <p
               className="flex cursor-pointer items-center justify-between gap-5 bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-slate-50"
-              onClick={() => toggleFAQ(index)}
+              onClick={() => toggleQuestion(index)}
             >
-              {faq.question}
+              {question.question}
               <button className="w-5 cursor-pointer border-none bg-transparent text-body transition-transform">
                 {isOpen ? "-" : "+"}
               </button>
