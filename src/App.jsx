@@ -23,7 +23,6 @@ export default function App() {
           element={
             <main className="m-0 box-border flex list-none flex-col gap-10 scroll-smooth p-0 font-body no-underline outline-none">
               <Hero />
-
               <Title text="About" />
               <About />
               <Title text="Projects" />
