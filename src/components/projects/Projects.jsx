@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { projectsVariants, generalVariants } from "../../utils/animations.js";
-import Button from "../Button.jsx";
+import Button from "../../utils/Button.jsx";
 import { projectsMap } from "../../utils/data.js";
 import { IoEnter } from "react-icons/io5";
 

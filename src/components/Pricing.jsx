@@ -1,0 +1,130 @@
+import { motion } from "framer-motion";
+import { generalVariants } from "../utils/animations.js";
+import card from "/assets/pricing/card.png";
+import bitcoin from "/assets/pricing/bitcoin.png";
+import moneygram from "/assets/pricing/moneygram.png";
+import graduation from "/assets/pricing/graduation.png";
+import talking from "/assets/pricing/talking.png";
+import homework from "/assets/pricing/homework.png";
+
+const Pricing = () => {
+  const paymentMethods = [
+    {
+      img: card,
+      alt: "Bank Transfer",
+      name: "Bank Transfer",
+      positive: "Widely used",
+      negative: "Slow and expensive",
+    },
+    {
+      img: moneygram,
+      alt: "MoneyGram",
+      name: "MoneyGram",
+      positive: "Simple and fast",
+      negative: "Expensive",
+    },
+    {
+      img: bitcoin,
+      alt: "Cryptocurrency",
+      name: "Cryptocurrency",
+      positive: "Instant and no fees",
+      negative: "Illegal in China",
+    },
+  ];
+
+  const pricingOptions = [
+    { img: talking, price: "1600 元", classes: 15, free: 1 },
+    { img: homework, price: "3100 元", classes: 30, free: 2 },
+    { img: graduation, price: "4600 元", classes: 45, free: 3 },
+  ];
+
+  return (
+    <motion.div
+      variants={generalVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      className="mx-auto w-full px-4 text-body text-grayText xs:px-6 lg:w-[65rem]"
+      id="pricing"
+    >
+      <section className="mx-auto max-w-6xl text-dark">
+        {/* Package Tiers */}
+        <div className="mb-12 grid gap-5 md:grid-cols-3">
+          {pricingOptions.map((option, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center gap-4 rounded-custom border bg-pureWhite p-6 text-center shadow-md transition hover:shadow-lg"
+            >
+              <img className="w-28" src={option.img} alt="ss" />
+              <p className="text-3xl font-bold text-dark/80">{option.price}</p>
+              <p className="">
+                {option.classes} Classes + {option.free} Free
+              </p>
+              <button className="w-full rounded-custom bg-blue-600 py-2 text-white transition hover:bg-blue-700">
+                Choose Plan
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <div className="w-full overflow-x-auto">
+          <h3 className="mb-4 text-center text-2xl font-semibold">
+            Payment Methods
+          </h3>
+
+          {/* TABLE for desktop */}
+          <div className="hidden overflow-hidden rounded-custom border border-slate-200 md:block">
+            {" "}
+            <table className="w-full">
+              {" "}
+              <thead className="bg-slate-50">
+                <tr className="">
+                  <th className="p-3 text-left font-medium">Method</th>
+                  <th className="p-3 text-center font-medium text-green-600">
+                    Positive
+                  </th>
+                  <th className="p-3 text-right font-medium text-red-600">
+                    Negative
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 bg-pureWhite">
+                {" "}
+                {paymentMethods.map((method, index) => (
+                  <tr key={index}>
+                    <td className="flex items-center gap-3 p-3 text-left">
+                      <img className="w-10" src={method.img} alt={method.alt} />
+                      {method.name}
+                    </td>
+                    <td className="p-3 text-center">{method.positive}</td>
+                    <td className="p-3 text-right">{method.negative}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* TABLE for mobile */}
+          <div className="block md:hidden">
+            {paymentMethods.map((method, index) => (
+              <div key={index} className="flex flex-col gap-5">
+                <div className="mb-5 flex flex-col rounded-custom border bg-pureWhite p-4 shadow-md">
+                  <div className="mb-3 flex items-center gap-3">
+                    <img className="w-12" src={method.img} alt={method.alt} />
+                    <span className="font-medium">{method.name}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="text-green-600">{method.positive}</div>
+                    <div className="text-red-600">{method.negative}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </motion.div>
+  );
+};
+
+export default Pricing;

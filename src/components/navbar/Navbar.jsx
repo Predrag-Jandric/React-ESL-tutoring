@@ -1,7 +1,14 @@
 import MobileNavbar from "./MobileNavbar";
 import { useState } from "react";
 import { CgMenu } from "react-icons/cg";
-import { navLinks } from "../../utils/data";
+
+const navLinks = [
+  { href: "pricing", label: "Pricing" },
+  { href: "projects", label: "Projects" },
+  { href: "roadmap", label: "Roadmap" },
+  { href: "reviews", label: "Reviews" },
+  { href: "contact", label: "Contact" },
+];
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

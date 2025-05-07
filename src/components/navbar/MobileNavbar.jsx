@@ -2,7 +2,15 @@ import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { mobilenavLinks } from "../../utils/data";
+
+const mobilenavLinks = [
+  { href: "about", label: "About" },
+  { href: "projects", label: "Projects" },
+  { href: "roadmap", label: "Roadmap" },
+  { href: "reviews", label: "Reviews" },
+  { href: "questions", label: "Questions" },
+  { href: "contact", label: "Contact" },
+];
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();

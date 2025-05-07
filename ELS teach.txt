@@ -1,23 +1,23 @@
-Nav.jsx - contains links to all sections
+X Nav.jsx - contains links to all sections
+[STRUCTURE DONE, JUST NEEDS CONTENT]
 
 Hero.jsx - explains the value-proposition
 
-About.jsx -should contain: years of experience (working for schools), age groups of my students, types of students. Personality & Teaching Style Keywords: patient, engaging, fun, structured, supportive, clear. Mention using games, slides, or storytelling, Certifications, Mention improvements, feedback, or successful cases.     Chinese parents love when teachers show respect or understanding of their culture. Include a short call-to-action button that scrolls to Contact or Strategy. I’ve taught dozens of Chinese students and understand the needs of parents who want both progress and discipline in the class. Mention if you speak any Chinese words 
+X About.jsx -should contain: years of experience (working for schools), age groups of my students, types of students. Personality & Teaching Style Keywords: patient, engaging, fun, structured, supportive, clear. Mention using games, slides, or storytelling, Certifications, Mention improvements, feedback, or successful cases.     Chinese parents love when teachers show respect or understanding of their culture. Include a short call-to-action button that scrolls to Contact or Strategy. I’ve taught dozens of Chinese students and understand the needs of parents who want both progress and discipline in the class. Mention if you speak any Chinese words. [STRUCTURE DONE, JUST NEEDS CONTENT]
+
 
 X Reviews.jsx - numbers with autoincrement like numbers of years worked, students teached and lesson conducter. along with an embeded video which is a short compilation of multiple classes switching one after the other as proof that i held classes. [STRUCTURE DONE, JUST NEEDS CONTENT]
 
-WhatILesson.jsx - should answer the question "What will my child learn?". this section should included Include: Levels you teach (e.g., beginner, intermediate, advanced), Types of lessons (e.g., phonics, grammar, conversation, test prep like IELTS), Any materials you use (Oxford books, custom slides, videos, games). Consider using tabs or cards to separate lesson types (Phonics | Grammar | Conversation | IELTS).
-
-Parents love structure, so include example lesson plans or week-by-week improvement chart if possible.
+WhatILesson.jsx - should answer the question "What will my child learn?". this section should included Include: Levels you teach (e.g., beginner, intermediate, advanced), Types of lessons (e.g., phonics, grammar, conversation, test prep like IELTS), Any materials you use (Oxford books, custom slides, videos, games). Consider using tabs or cards to separate lesson types (Phonics | Grammar | Conversation | IELTS). Parents love structure, so include example lesson plans or week-by-week improvement chart if possible.
 
 X Roadmap.jsx - contains phases like 1. contact me with a request 2. conduct demo lesson 3. pay and we start lessons [STRUCTURE DONE, CONTENT DONE]
 
 
-Pricing.jsx - should contain packages and prices. for example, if you pay by bank transfer, for every 300$ you get one class free, by moneygram same deal and by crypto you get 2 classes free for every 300$. Pricing in RMB  
+XX Pricing.jsx - should contain packages and prices. for example, if you pay by bank transfer, for every 300$ you get one class free, by moneygram same deal and by crypto you get 2 classes free for every 300$. Pricing in RMB [DONE]
 
-X questions.jsx - contains questions, and handles objections [STRUCTURE DONE, JUST NEEDS CONTENT]
+X Questions.jsx - contains questions, and handles objections [STRUCTURE DONE, JUST NEEDS CONTENT]
 
-Contact.jsx - contains an encouraging message (like: lets begin) and an ilustration possibly. most importantly it contains 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned). WeChat QR code should be big and easy to scan. [STRUCTURE SEMI-DONE, JUST NEEDS CONTENT]
+X Contact.jsx - contains an encouraging message (like: lets begin). most importantly it contains 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned). WeChat QR code should be big and easy to scan. [STRUCTURE NOT DONE, NEEDS CONTENT FIRST]
 
 BUY .cn domain
 Register a personal WeChat account (not a business one) and use it for direct contact. Most Chinese parents expect this.

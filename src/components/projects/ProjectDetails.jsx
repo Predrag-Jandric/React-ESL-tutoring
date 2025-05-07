@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../../utils/Button";
 import { useNavigate, useParams } from "react-router-dom";
 // import { useEffect } from "react";
 import ZoomImage from "../../utils/ZoomImage";

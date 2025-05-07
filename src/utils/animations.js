@@ -13,23 +13,7 @@ export const heroVariants = {
   },
 };
 
-// animations for SKILLS section
-export const skillsVariants = {
-  initial: {
-    opacity: 0,
-    scale: 0,
-  },
-  animate: (index) => {
-    return {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.25,
-        delay: 0.15 * index,
-      },
-    };
-  },
-};
+
 
 // animations for PROJECTS section
 export const projectsVariants = {

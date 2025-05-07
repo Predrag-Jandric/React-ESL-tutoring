@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
-import Button from "./Button";
+import Button from "../utils/Button.jsx";
 // import devPhoto from "/assets/about/devPhoto.jpg";
 import { RiDownload2Fill } from "react-icons/ri";
 
@@ -14,7 +14,7 @@ export default function About() {
       className="mx-1 flex flex-col items-center px-3 xs:px-5"
       id="about"
     >
-      <section className="container hover:shadow-lg transition-all rounded-custom text-grayText">
+      <section className="container rounded-custom text-grayText transition-all hover:shadow-lg">
         <section className="flex flex-col">
           {/* <img
             src={devPhoto}

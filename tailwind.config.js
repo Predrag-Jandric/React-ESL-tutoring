@@ -11,7 +11,7 @@ export default {
         // variables
         white: "#f1f1f1",
         grayText: "#575b60",
-        dark: "#292D3D",
+        dark: "#313649",
         // dark: "#FF0000",
 
         bgcolor: "#2F4575", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
@@ -28,7 +28,7 @@ export default {
       },
       fontSize: {
         headings: "1.5rem",
-        body: "1.07rem",
+        body: "1.1rem",
       },
       borderRadius: {
         custom: "5px",
