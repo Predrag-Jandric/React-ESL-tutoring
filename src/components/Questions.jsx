@@ -58,16 +58,16 @@ export default function Questions() {
 
         return (
           <div
-            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out"
+            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out "
             key={index}
           >
             <p
-              className="flex cursor-pointer items-center justify-between gap-5 bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-slate-50"
+              className={`${isOpen ? "border-bgcolor" : "border-transparent"} flex cursor-pointer items-center justify-between gap-5 bg-pureWhite px-6 py-4 border-l-4  text-body font-medium transition-all hover:bg-slate-50`}
               onClick={() => toggleQuestion(index)}
             >
               {question.question}
               <button className="w-5 cursor-pointer border-none bg-transparent text-body transition-transform">
-                {isOpen ? "-" : "+"}
+                {isOpen ? "▴" : "▾"}
               </button>
             </p>
             <AnimatePresence initial={false}>

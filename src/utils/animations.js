@@ -13,8 +13,6 @@ export const heroVariants = {
   },
 };
 
-
-
 // animations for PROJECTS section
 export const projectsVariants = {
   initial: {
@@ -28,45 +26,6 @@ export const projectsVariants = {
       transition: {
         duration: 0.3,
         delay: 0.05 * index,
-      },
-    };
-  },
-};
-
-// ROADMAP variants
-export const roadmapVariants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: (customDelay) => {
-    return {
-      opacity: 1,
-      transition: {
-        duration: 0.4,
-        delay: customDelay,
-      },
-    };
-  },
-};
-
-// ROADMAP ARROW variants
-export const roadmapArrowVariants = {
-  initial: () => {
-    const isMobile = window.innerWidth <= 768;
-    return {
-      opacity: 0,
-      x: isMobile ? 0 : -70,
-      y: isMobile ? -70 : 0,
-    };
-  },
-  animate: (customDelay) => {
-    return {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        duration: 0.4,
-        delay: customDelay,
       },
     };
   },

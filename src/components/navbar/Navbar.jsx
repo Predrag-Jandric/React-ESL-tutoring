@@ -5,7 +5,6 @@ import { CgMenu } from "react-icons/cg";
 const navLinks = [
   { href: "pricing", label: "Pricing" },
   { href: "projects", label: "Projects" },
-  { href: "roadmap", label: "Roadmap" },
   { href: "reviews", label: "Reviews" },
   { href: "contact", label: "Contact" },
 ];

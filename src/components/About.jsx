@@ -2,9 +2,19 @@ import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import Button from "../utils/Button.jsx";
 // import devPhoto from "/assets/about/devPhoto.jpg";
-import { RiDownload2Fill } from "react-icons/ri";
+import { useLanguage } from "../utils/LanguageContext.jsx"; 
 
 export default function About() {
+  const { t } = useLanguage();
+
+
+  const { language, setLanguage } = useLanguage();
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "zh" : "en");
+  };
+
+
   return (
     <motion.div
       variants={generalVariants}
@@ -24,37 +34,39 @@ export default function About() {
 
           {/* <div className="lg:w-2/3 w-full"> */}
           <h3 className="mb-4 font-headings text-headings font-medium">
-            Hi, I’m Predrag – a Frontend Developer with Big Goals
+          {t("heroTitle")}
           </h3>
           <p className="text-body">
-            Volunteering for a year with Chingu.io was a game-changer for me. It
-            helped me refine my work ethic and gain invaluable real-world
-            experience building complex applications in an Agile environment
-            using Scrum practices.
+          {t("contactButton")}
             <br />
             <br />
-            Work consistency, clean and scalable code, and well-written
-            documentation are the cornerstones of my work. I think that great
-            code doesn’t just work, it should be easy to read, maintain, and
-            build upon by other members. I’ve been sharing my coding journey on
-            GitHub and YouTube, documenting lessons learned.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            excepturi, porro qui necessitatibus harum reprehenderit. Commodi
+            eaque amet inventore dolore minima soluta explicabo, illo in
+            reprehenderit voluptas aut officia tempora quidem rerum maxime
+            nesciunt neque aliquid accusantium recusandae dignissimos
+            distinctio!
             <br />
             <br />
-            My long-term goal is to deepen my understanding of backend
-            technologies, including Node.js, Express, and MongoDB. I’m excited
-            to expand my skill set beyond front-end development, enabling me to
-            build seamless full-stack applications and tackle more complex
-            challenges.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur, veritatis. Illum soluta debitis dolore doloremque
+            officia necessitatibus saepe voluptas dolorum deleniti! Quis quo
+            adipisci ad odio tempora! Optio, blanditiis, omnis, at qui aut fugit
+            officia voluptatum sapiente provident minus enim dolore. Ipsam
+            repudiandae consectetur eum? challenges.
           </p>
           {/* </div> */}
         </section>
 
         <Button
-          onClick={() => alert("Coming soon")}
+          onClick={toggleLanguage}
           className="mx-auto mt-10 flex w-56 gap-3"
         >
-          Download CV <RiDownload2Fill size={20} />
+          {language === "en" ? "中文" : "EN"}
         </Button>
+
+
+       
       </section>
     </motion.div>
   );

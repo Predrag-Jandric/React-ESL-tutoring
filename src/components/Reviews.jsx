@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 const stats = [
   { end: 6, label: "Years of experience" },
   { end: 8000, label: "Completed lessons", suffix: "+" },
-  { end: 1200, label: "Students served", suffix: "+" },
+  { end: 1200, label: "Students taught", suffix: "+" },
 ];
 
 export default function Reviews() {
@@ -18,13 +18,13 @@ export default function Reviews() {
       className="mx-auto w-full px-4 text-grayText xs:px-6 lg:w-[65rem]"
       id="reviews"
     >
-      <article className="mx-auto flex w-auto max-w-6xl flex-col items-center justify-center gap-10">
+      <article className="mx-auto  flex w-auto max-w-6xl flex-col items-center justify-center gap-10">
         {/* counters row */}
         <div className="flex w-full flex-col gap-5 md:flex-row md:gap-7">
           {stats.map(({ end, label, suffix }, i) => (
             <div
               key={i}
-              className="w-full rounded-custom bg-pureWhite px-6 py-4 text-center shadow-sm md:flex-1"
+              className="w-full rounded-custom bg-pureWhite px-6 py-4 text-center shadow-md md:flex-1"
             >
               <span className="text-4xl font-semibold">
                 <CountUp
@@ -38,13 +38,13 @@ export default function Reviews() {
                 />
                 {suffix}
               </span>
-              <p className="m-2">{label}</p>
+              <p className="m-2 text-body">{label}</p>
             </div>
           ))}
         </div>
 
         <video
-          className="rounded-custom bg-white object-cover shadow-sm"
+          className="rounded-custom bg-white object-cover shadow-md"
           src="/assets/reviews/example.mp4"
           poster="/assets/reviews/reviewsposter.png"
           playsInline

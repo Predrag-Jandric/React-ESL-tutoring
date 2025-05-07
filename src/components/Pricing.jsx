@@ -10,23 +10,20 @@ import homework from "/assets/pricing/homework.png";
 const Pricing = () => {
   const paymentMethods = [
     {
-      img: card,
-      alt: "Bank Transfer",
       name: "Bank Transfer",
+      img: card,
       positive: "Widely used",
       negative: "Slow and expensive",
     },
     {
-      img: moneygram,
-      alt: "MoneyGram",
       name: "MoneyGram",
+      img: moneygram,
       positive: "Simple and fast",
       negative: "Expensive",
     },
     {
-      img: bitcoin,
-      alt: "Cryptocurrency",
       name: "Cryptocurrency",
+      img: bitcoin,
       positive: "Instant and no fees",
       negative: "Illegal in China",
     },
@@ -55,14 +52,11 @@ const Pricing = () => {
               key={index}
               className="flex flex-col items-center gap-4 rounded-custom border bg-pureWhite p-6 text-center shadow-md transition hover:shadow-lg"
             >
-              <img className="w-28" src={option.img} alt="ss" />
+              <img className="w-28" src={option.img} alt="missing" />
               <p className="text-3xl font-bold text-dark/80">{option.price}</p>
-              <p className="">
+              <p>
                 {option.classes} Classes + {option.free} Free
               </p>
-              <button className="w-full rounded-custom bg-blue-600 py-2 text-white transition hover:bg-blue-700">
-                Choose Plan
-              </button>
             </div>
           ))}
         </div>
@@ -93,7 +87,7 @@ const Pricing = () => {
                 {paymentMethods.map((method, index) => (
                   <tr key={index}>
                     <td className="flex items-center gap-3 p-3 text-left">
-                      <img className="w-10" src={method.img} alt={method.alt} />
+                      <img className="w-10" src={method.img} alt={method.name} />
                       {method.name}
                     </td>
                     <td className="p-3 text-center">{method.positive}</td>
@@ -110,7 +104,7 @@ const Pricing = () => {
               <div key={index} className="flex flex-col gap-5">
                 <div className="mb-5 flex flex-col rounded-custom border bg-pureWhite p-4 shadow-md">
                   <div className="mb-3 flex items-center gap-3">
-                    <img className="w-12" src={method.img} alt={method.alt} />
+                    <img className="w-12" src={method.img} alt={method.name} />
                     <span className="font-medium">{method.name}</span>
                   </div>
                   <div className="flex justify-between">

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const mobilenavLinks = [
   { href: "about", label: "About" },
   { href: "projects", label: "Projects" },
-  { href: "roadmap", label: "Roadmap" },
   { href: "reviews", label: "Reviews" },
   { href: "questions", label: "Questions" },
   { href: "contact", label: "Contact" },

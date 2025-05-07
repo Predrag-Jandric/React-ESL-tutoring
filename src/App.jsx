@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import ProjectDetails from "./components/projects/ProjectDetails";
 import ScrollToTop from "./utils/ScrollToTop";
 import ScrollToHash from "./utils/ScrollToHash";
-import Roadmap from "./components/Roadmap";
+
 import Pricing from "./components/Pricing";
 
 export default function App() {
@@ -25,10 +25,9 @@ export default function App() {
               <Hero />
               <Title text="About" />
               <About />
-              <Title text="Projects" />
-              <Projects />
-              <Title text="Roadmap" />
-              <Roadmap />
+              {/* <Title text="Projects" />
+              <Projects /> */}
+            
               <Title text="Reviews" />
               <Reviews />
               <Title text="Pricing" />
