@@ -2,17 +2,10 @@ import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import Button from "../utils/Button.jsx";
 // import devPhoto from "/assets/about/devPhoto.jpg";
-import { useLanguage } from "../utils/LanguageContext.jsx"; 
+
 
 export default function About() {
-  const { t } = useLanguage();
-
-
-  const { language, setLanguage } = useLanguage();
-
-  const toggleLanguage = () => {
-    setLanguage(language === "en" ? "zh" : "en");
-  };
+ 
 
 
   return (
@@ -34,10 +27,10 @@ export default function About() {
 
           {/* <div className="lg:w-2/3 w-full"> */}
           <h3 className="mb-4 font-headings text-headings font-medium">
-          {t("heroTitle")}
+          asdasas
           </h3>
           <p className="text-body">
-          {t("contactButton")}
+          dasdas
             <br />
             <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
@@ -59,10 +52,10 @@ export default function About() {
         </section>
 
         <Button
-          onClick={toggleLanguage}
+         
           className="mx-auto mt-10 flex w-56 gap-3"
         >
-          {language === "en" ? "中文" : "EN"}
+          btn
         </Button>
 
 

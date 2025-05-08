@@ -6,33 +6,21 @@ import moneygram from "/assets/pricing/moneygram.png";
 import graduation from "/assets/pricing/graduation.png";
 import talking from "/assets/pricing/talking.png";
 import homework from "/assets/pricing/homework.png";
+import { useLanguage } from "../utils/LanguageContext.jsx";
 
 const Pricing = () => {
-  const paymentMethods = [
-    {
-      name: "Bank Transfer",
-      img: card,
-      positive: "Widely used",
-      negative: "Slow and expensive",
-    },
-    {
-      name: "MoneyGram",
-      img: moneygram,
-      positive: "Simple and fast",
-      negative: "Expensive",
-    },
-    {
-      name: "Cryptocurrency",
-      img: bitcoin,
-      positive: "Instant and no fees",
-      negative: "Illegal in China",
-    },
-  ];
+  const { t } = useLanguage();
+
+  const paymentTranslations = t("paymentoptions");
+  const paymentMethods = paymentTranslations.map((item, index) => ({
+    ...item,
+    img: [card, moneygram, bitcoin][index], 
+  }));
 
   const pricingOptions = [
-    { img: talking, price: "1600 元", classes: 15, free: 1 },
-    { img: homework, price: "3100 元", classes: 30, free: 2 },
-    { img: graduation, price: "4600 元", classes: 45, free: 3 },
+    { img: talking, price: "1600 元", labelKey: t("packageone") },
+    { img: homework, price: "3100 元", labelKey: t("packagetwo") },
+    { img: graduation, price: "4600 元", labelKey: t("packagethree") },
   ];
 
   return (
@@ -53,41 +41,40 @@ const Pricing = () => {
               className="flex flex-col items-center gap-4 rounded-custom border bg-pureWhite p-6 text-center shadow-md transition hover:shadow-lg"
             >
               <img className="w-28" src={option.img} alt="missing" />
-              <p className="text-3xl font-bold text-dark/80">{option.price}</p>
-              <p>
-                {option.classes} Classes + {option.free} Free
-              </p>
+              <p className="text-3xl font-bold text-grayText">{option.price}</p>
+              <p>{option.labelKey}</p>
             </div>
           ))}
         </div>
 
         <div className="w-full overflow-x-auto">
-          <h3 className="mb-4 text-center text-2xl font-semibold">
-            Payment Methods
+          <h3 className="mb-4 text-grayText text-center text-2xl font-semibold">
+            {t("paymentmethod")}
           </h3>
 
           {/* TABLE for desktop */}
           <div className="hidden overflow-hidden rounded-custom border border-slate-200 md:block">
-            {" "}
             <table className="w-full">
-              {" "}
               <thead className="bg-slate-50">
                 <tr className="">
-                  <th className="p-3 text-left font-medium">Method</th>
+                  <th className="p-3 text-left font-medium">{t("methodtable")}</th>
                   <th className="p-3 text-center font-medium text-green-600">
-                    Positive
+                    {t("positivetable")}
                   </th>
                   <th className="p-3 text-right font-medium text-red-600">
-                    Negative
+                    {t("negativetable")}
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-200 bg-pureWhite">
-                {" "}
                 {paymentMethods.map((method, index) => (
                   <tr key={index}>
                     <td className="flex items-center gap-3 p-3 text-left">
-                      <img className="w-10" src={method.img} alt={method.name} />
+                      <img
+                        className="w-10"
+                        src={method.img}
+                        alt={method.name}
+                      />
                       {method.name}
                     </td>
                     <td className="p-3 text-center">{method.positive}</td>

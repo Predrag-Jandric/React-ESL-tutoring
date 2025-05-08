@@ -1,6 +1,8 @@
 import MobileNavbar from "./MobileNavbar";
 import { useState } from "react";
 import { CgMenu } from "react-icons/cg";
+import { useLanguage } from "../../utils/LanguageContext";
+
 
 const navLinks = [
   { href: "pricing", label: "Pricing" },
@@ -11,6 +13,15 @@ const navLinks = [
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+
+
+
+  const { language, setLanguage } = useLanguage();
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "zh" : "en");
+  };
 
   const handleNavClick = (e, href) => {
     e.preventDefault();
@@ -42,6 +53,9 @@ function Navbar() {
               <span className="absolute left-[10%] top-full z-[-1] h-0.5 w-[80%] scale-0 bg-primary transition duration-300 ease-in-out group-hover:scale-100"></span>
             </li>
           ))}
+          <button className="border-2 border-red-400 p-3 " onClick={toggleLanguage}>
+          {language === "en" ? "中文" : "EN"}
+          </button>
         </ul>
         <CgMenu
           className="absolute right-[7%] top-[20%] size-10 cursor-pointer transition-colors hover:text-primary sm:hidden"

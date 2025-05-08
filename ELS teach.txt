@@ -10,7 +10,7 @@ X Reviews.jsx - numbers with autoincrement like numbers of years worked, student
 
 WhatILesson.jsx - should answer the question "What will my child learn?". this section should included Include: Levels you teach (e.g., beginner, intermediate, advanced), Types of lessons (e.g., phonics, grammar, conversation, test prep like IELTS), Any materials you use (Oxford books, custom slides, videos, games). Consider using tabs or cards to separate lesson types (Phonics | Grammar | Conversation | IELTS). Parents love structure, so include example lesson plans or week-by-week improvement chart if possible.
 
-XX Pricing.jsx - should contain packages and prices. for example, if you pay by bank transfer, for every 300$ you get one class free, by moneygram same deal and by crypto you get 2 classes free for every 300$. Pricing in RMB [DONE]
+XX Pricing.jsx - should contain packages and prices. for example, if you pay by bank transfer, for every 300$ you get one class free, by moneygram same deal and by crypto you get 2 classes free for every 300$. Pricing in RMB [DONE 100%]
 
 X Questions.jsx - contains questions, and handles objections [STRUCTURE DONE, JUST NEEDS CONTENT]
 how can i start? answer: 1. contact me with a request 2. conduct demo lesson 3. pay and we start lessons 

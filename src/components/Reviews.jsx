@@ -1,14 +1,17 @@
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import CountUp from "react-countup";
-
-const stats = [
-  { end: 6, label: "Years of experience" },
-  { end: 8000, label: "Completed lessons", suffix: "+" },
-  { end: 1200, label: "Students taught", suffix: "+" },
-];
+import { useLanguage } from "../utils/LanguageContext.jsx";
 
 export default function Reviews() {
+  const { t } = useLanguage();
+
+  const stats = [
+    { number: 6, label: t("yearsofexperience") },
+    { number: 8000, label: t("completedlessons"), suffix: "+" },
+    { number: 1200, label: t("studentstaught"), suffix: "+" },
+  ];
+
   return (
     <motion.section
       variants={generalVariants}
@@ -18,10 +21,10 @@ export default function Reviews() {
       className="mx-auto w-full px-4 text-grayText xs:px-6 lg:w-[65rem]"
       id="reviews"
     >
-      <article className="mx-auto  flex w-auto max-w-6xl flex-col items-center justify-center gap-10">
+      <article className="mx-auto flex w-auto max-w-6xl flex-col items-center justify-center gap-10">
         {/* counters row */}
         <div className="flex w-full flex-col gap-5 md:flex-row md:gap-7">
-          {stats.map(({ end, label, suffix }, i) => (
+          {stats.map(({ number, label, suffix }, i) => (
             <div
               key={i}
               className="w-full rounded-custom bg-pureWhite px-6 py-4 text-center shadow-md md:flex-1"
@@ -32,7 +35,7 @@ export default function Reviews() {
                   scrollSpyOnce
                   scrollSpyDelay={300}
                   start={0}
-                  end={end}
+                  end={number}
                   duration={3}
                   separator=""
                 />

@@ -5,12 +5,12 @@ const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
-    return localStorage.getItem("lang") || "en";
+    return localStorage.getItem("lang") || "zh";
   });
 
-  useEffect(() => {
-    localStorage.setItem("lang", language); // Save to localStorage
-  }, [language]);
+  // useEffect(() => {
+  //   localStorage.setItem("lang", language); // Save to localStorage
+  // }, [language]);
 
   const t = (key) => translations[language][key] || key; // fallback if key not found
 
