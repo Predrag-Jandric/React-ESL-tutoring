@@ -3,11 +3,7 @@ import { generalVariants } from "../utils/animations.js";
 import Button from "../utils/Button.jsx";
 // import devPhoto from "/assets/about/devPhoto.jpg";
 
-
 export default function About() {
- 
-
-
   return (
     <motion.div
       variants={generalVariants}
@@ -27,39 +23,28 @@ export default function About() {
 
           {/* <div className="lg:w-2/3 w-full"> */}
           <h3 className="mb-4 font-headings text-headings font-medium">
-          asdasas
+            asdasas
           </h3>
           <p className="text-body">
-          dasdas
+            dasdas
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            excepturi, porro qui necessitatibus harum reprehenderit. Commodi
-            eaque amet inventore dolore minima soluta explicabo, illo in
-            reprehenderit voluptas aut officia tempora quidem rerum maxime
-            nesciunt neque aliquid accusantium recusandae dignissimos
-            distinctio!
+            [say that you are a permanent american expat living in europe most
+            of the time or sometimes in thailand] [say that you are a teacher
+            and a programming developer] [say that you are professional, kind,
+            flexible, patient and love working with students from 5-12 years
+            old]
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur, veritatis. Illum soluta debitis dolore doloremque
-            officia necessitatibus saepe voluptas dolorum deleniti! Quis quo
-            adipisci ad odio tempora! Optio, blanditiis, omnis, at qui aut fugit
-            officia voluptatum sapiente provident minus enim dolore. Ipsam
-            repudiandae consectetur eum? challenges.
+            [say that im more than a teacher who does the job and doesnt care, i
+            am a mentor and student's needs and progress comes first ]
           </p>
           {/* </div> */}
         </section>
 
-        <Button
-         
-          className="mx-auto mt-10 flex w-56 gap-3"
-        >
-          btn
+        <Button className="mx-auto mt-10 flex w-56 gap-3">
+          view my teaching history
         </Button>
-
-
-       
       </section>
     </motion.div>
   );
