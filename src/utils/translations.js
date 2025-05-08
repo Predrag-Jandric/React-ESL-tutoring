@@ -60,5 +60,6 @@ export const translations = {
         negative: "在中国是非法的",
       },
     ],
+    
   },
 };

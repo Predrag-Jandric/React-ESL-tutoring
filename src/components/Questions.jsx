@@ -1,47 +1,57 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
+import { useLanguage } from "../utils/LanguageContext.jsx";
 
-const questionsMap = [
-  {
-    question: "What makes you stand out from other developers?",
-    answer: `- I have a strong drive to keep learning, which is essential in a fast-paced, ever-evolving tech field.\n- I bring diverse experience from working on various projects with different teams, always maintaining a solution-driven mindset.\n- I’m disciplined, focused on writing clean, maintainable code, and committed to promoting a positive, team-oriented work environment.\n- I  enjoy writing documentation, giving presentations, and contributing to a collaborative learning culture. For me, these things are not a chore.`,
-  },
-  {
-    question:
-      "How much experience do you have as a frontend developer, and what kinds of projects have you worked on?",
-    answer:
-      "I’ve been coding for a few years and have worked on 100+ projects (available on my GitHub) of various sizes and complexity. I follow scalable, responsive, pixel-perfect design principles and prioritize best practices to ensure code quality, readability, and long-term maintainability.",
-  },
-  {
-    question: "Do you have experience with [specific framework/tool]?",
-    answer:
-      "I may not always have direct experience with every tool, but I’m a quick learner and eager to expand my skill set to meet project requirements. I think programming is not about syntax memorisation but problem solving things and concept understanding. Staying curious, continuously learning, and keeping up with the latest tech trends is a key part of my approach to development.",
-  },
-  {
-    question:
-      "Do you have experience with full-stack development or backend technologies?",
-    answer:
-      "While most of my experience in in front-end development, I have a solid understanding of backend technologies like Node.js, Express, and MongoDB databases. I’m always working on improving these things.",
-  },
-  {
-    question: "How do you work in teams, and how do you respond to feedback?",
-    answer:
-      "I’ve worked on open-source projects with developers from diverse backgrounds, often taking on the role of lead developer which has helped me become a better team player. I value collaboration, communication, and I adapt quickly to different team dynamics. I appreciate constructive feedback because it’s an opportunity to improve and grow as a developer. When my colleagues faced challenges, I actively guided them by sharing my knowledge, and helping them troubleshoot issues, ensuring we all grew together.",
-  },
-  {
-    question: "How do you meet deadlines and handle challenges?",
-    answer:
-      "I think that efficient team communication is key to setting managable deadlines and achieving them in time. I’ve worked with the Scrum framework, which encourages collaboration between the development team, Scrum Master, and Product Owner to stay on track and deliver on time for the end user. When challenges arise, my go-to approach is to break the problem into smaller, more manageable pieces. Usually, stepping away for a quick walk clears my mind and brings fresh ideas. In the next team brainstorming session, we then all present our solutions and choose the best combination of ideas together.",
-  },
-];
+// const questionsMap = [
+//   {
+//     question: "How do we get started, and what’s the next step?",
+//     answer: `Just contact me on WeChat, and we’ll schedule your free trial class. After that, you can choose a package and make the payment, and we’ll get started right away.`,
+//   },
+//   {
+//     question: "What platform do you use for the classes?",
+//     answer:
+//       "I use ClassIn. It’s free, super easy to set up, and widely used for online education.",
+//   },
+//   {
+//     question: "Do you offer 1-on-1 or group classes?",
+//     answer:
+//       "I mainly do 1-on-1 lessons to give full attention to your child, but I can also teach 2 siblings together (for the same price) if they’re close in age and English level.",
+//   },
+//   {
+//     question:
+//       "Can we try a class before booking a package? How long are the lessons?",
+//     answer:
+//       "Absolutely! The first class is free so you can see if it’s a good fit. Each lesson is 30 minutes, but I can adjust based on your child’s needs.",
+//   },
+//   {
+//     question: "What happens if we miss a class or need to reschedule?",
+//     answer:
+//       "No worries at all, I understand the children are often busy with school. You can cancel or reschedule anytime. If you happen to miss a class, it won’t be deducted from your package.",
+//   },
+//   {
+//     question: "What if my child is shy or a complete beginner?",
+//     answer:
+//       "Totally fine! I’ve worked with lots of beginners and shy students. I use fun games, stories, and funny visual effects, to help them feel comfortable, and I teach based on your child’s current ability. A parent or grandparent is also always welcome to sit nearby for child's support.",
+//   },
+//   {
+//     question:
+//       "How will I know my child is improving, and do you give homework?",
+//     answer:
+//       "I give feedback often, so you’ll always know how your child is doing and what we’re working on. If you'd like, I can also give homework or fun practice ideas.",
+//   },
+// ];
+
 
 export default function Questions() {
+    const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(null);
-
+  
   const toggleQuestion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
+  const questionsMap = t("questionstranslate")
 
   return (
     <motion.section
@@ -58,11 +68,11 @@ export default function Questions() {
 
         return (
           <div
-            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out "
+            className="mb-4 overflow-hidden rounded-custom shadow-md transition-transform ease-in-out"
             key={index}
           >
             <p
-              className={`${isOpen ? "border-bgcolor" : "border-transparent"} flex cursor-pointer items-center justify-between gap-5 bg-pureWhite px-6 py-4 border-l-4  text-body font-medium transition-all hover:bg-slate-50`}
+              className={`${isOpen ? "border-bgcolor" : "border-transparent"} flex cursor-pointer items-center justify-between gap-5 border-l-4 bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-slate-50`}
               onClick={() => toggleQuestion(index)}
             >
               {question.question}

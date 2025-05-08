@@ -5,9 +5,9 @@ import { useLanguage } from "../../utils/LanguageContext";
 
 
 const navLinks = [
-  { href: "pricing", label: "Pricing" },
-  { href: "projects", label: "Projects" },
   { href: "reviews", label: "Reviews" },
+  { href: "pricing", label: "Pricing" },
+  { href: "questions", label: "Questions" },
   { href: "contact", label: "Contact" },
 ];
 
