@@ -3,55 +3,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import { useLanguage } from "../utils/LanguageContext.jsx";
 
-// const questionsMap = [
-//   {
-//     question: "How do we get started, and what’s the next step?",
-//     answer: `Just contact me on WeChat, and we’ll schedule your free trial class. After that, you can choose a package and make the payment, and we’ll get started right away.`,
-//   },
-//   {
-//     question: "What platform do you use for the classes?",
-//     answer:
-//       "I use ClassIn. It’s free, super easy to set up, and widely used for online education.",
-//   },
-//   {
-//     question: "Do you offer 1-on-1 or group classes?",
-//     answer:
-//       "I mainly do 1-on-1 lessons to give full attention to your child, but I can also teach 2 siblings together (for the same price) if they’re close in age and English level.",
-//   },
-//   {
-//     question:
-//       "Can we try a class before booking a package? How long are the lessons?",
-//     answer:
-//       "Absolutely! The first class is free so you can see if it’s a good fit. Each lesson is 30 minutes, but I can adjust based on your child’s needs.",
-//   },
-//   {
-//     question: "What happens if we miss a class or need to reschedule?",
-//     answer:
-//       "No worries at all, I understand the children are often busy with school. You can cancel or reschedule anytime. If you happen to miss a class, it won’t be deducted from your package.",
-//   },
-//   {
-//     question: "What if my child is shy or a complete beginner?",
-//     answer:
-//       "Totally fine! I’ve worked with lots of beginners and shy students. I use fun games, stories, and funny visual effects, to help them feel comfortable, and I teach based on your child’s current ability. A parent or grandparent is also always welcome to sit nearby for child's support.",
-//   },
-//   {
-//     question:
-//       "How will I know my child is improving, and do you give homework?",
-//     answer:
-//       "I give feedback often, so you’ll always know how your child is doing and what we’re working on. If you'd like, I can also give homework or fun practice ideas.",
-//   },
-// ];
-
-
 export default function Questions() {
-    const { t } = useLanguage();
+  const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(null);
-  
+
   const toggleQuestion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const questionsMap = t("questionstranslate")
+  const questionsMap = t("questionstranslate");
 
   return (
     <motion.section
