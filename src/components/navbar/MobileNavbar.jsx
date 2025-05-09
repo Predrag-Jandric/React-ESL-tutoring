@@ -2,11 +2,14 @@ import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { PiArrowsCounterClockwiseBold } from "react-icons/pi";
+import en from "/assets/nav/en.png";
+import zh from "/assets/nav/zh.png";
+import { useLanguage } from "../../utils/LanguageContext";
 
-const mobilenavLinks = [
-  { href: "about", label: "About" },
-  { href: "projects", label: "Projects" },
+const navLinks = [
   { href: "reviews", label: "Reviews" },
+  { href: "pricing", label: "Pricing" },
   { href: "questions", label: "Questions" },
   { href: "contact", label: "Contact" },
 ];
@@ -69,6 +72,12 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
   const [clickable, setClickable] = useState(true);
   const scope = useMenuAnimation(isOpen);
 
+  const { language, setLanguage } = useLanguage();
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "zh" : "en");
+  };
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 640) {
@@ -114,34 +123,54 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
   return (
     <div ref={scope}>
       <nav className="fixed left-0 top-0 z-50 h-full w-full translate-x-full bg-bgcolor bg-opacity-95 pt-20 backdrop-blur-sm transition-colors">
-        <ul className="relative flex flex-col gap-y-6 px-8">
-          <motion.div
-            className="absolute -top-[10%] right-[5%] cursor-pointer"
-            onClick={handleToggle}
-            initial={{ scale: 1, opacity: 1 }}
-            animate={
-              isOpen
-                ? { scale: 1, opacity: 1, rotate: 0 }
-                : { scale: 0.7, opacity: 0, rotate: 90 }
-            }
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            <IoCloseOutline className="size-12 transition-colors hover:text-primary" />
-          </motion.div>
-          {mobilenavLinks.map((link, index) => (
+        <div className="relative flex flex-col gap-y-6 px-8">
+          <div className="mb-4 flex w-full items-center justify-between">
+            <motion.button
+              initial={{ scale: 0, opacity: 0 }}
+              animate={
+                isOpen ? { scale: 1, opacity: 1 } : { scale: 0.7, opacity: 0 }
+              }
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              onClick={toggleLanguage}
+              className="flex size-10 cursor-pointer items-center gap-2 rounded text-2xl text-white"
+            >
+              <img
+                className="h-9 w-9 object-contain"
+                src={language === "en" ? zh : en}
+                alt="language icon"
+              />
+              <span>
+                <PiArrowsCounterClockwiseBold className="size-7" />
+              </span>
+            </motion.button>
+
+            <motion.div
+              onClick={handleToggle}
+              initial={{ scale: 1, opacity: 1 }}
+              animate={
+                isOpen
+                  ? { scale: 1, opacity: 1, rotate: 0 }
+                  : { scale: 0.7, opacity: 0, rotate: 90 }
+              }
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              <IoCloseOutline className="size-12 cursor-pointer transition-all hover:rotate-45" />
+            </motion.div>
+          </div>
+          {navLinks.map((link, index) => (
             <li key={index} className="group relative z-10 flex w-full">
               <a
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="relative w-full cursor-pointer px-5 py-2 text-3xl text-white transition duration-200 ease-in-out hover:text-primary group-hover:before:scale-100"
+                className="relative w-full cursor-pointer py-2 text-3xl text-white transition duration-200 ease-in-out hover:text-primary group-hover:before:scale-100"
               >
                 {link.label}
               </a>
-              <span className="absolute left-5 top-full z-[-1] h-1 w-32 origin-left scale-x-0 bg-primary transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+              <span className="absolute left-0 top-full z-[-1] h-1 w-32 origin-left scale-x-0 bg-primary transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </li>
           ))}
-        </ul>
+        </div>
       </nav>
     </div>
   );

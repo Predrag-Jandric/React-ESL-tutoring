@@ -2,7 +2,8 @@ import MobileNavbar from "./MobileNavbar";
 import { useState } from "react";
 import { CgMenu } from "react-icons/cg";
 import { useLanguage } from "../../utils/LanguageContext";
-
+import en from "/assets/nav/en.png";
+import zh from "/assets/nav/zh.png";
 
 const navLinks = [
   { href: "reviews", label: "Reviews" },
@@ -13,9 +14,6 @@ const navLinks = [
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-
-
 
   const { language, setLanguage } = useLanguage();
 
@@ -53,12 +51,19 @@ function Navbar() {
               <span className="absolute left-[10%] top-full z-[-1] h-0.5 w-[80%] scale-0 bg-primary transition duration-300 ease-in-out group-hover:scale-100"></span>
             </li>
           ))}
-          <button className="border-2 border-red-400 p-3 " onClick={toggleLanguage}>
-          {language === "en" ? "中文" : "EN"}
-          </button>
         </ul>
+        <button
+          className="absolute right-5 top-3 hidden size-10 cursor-pointer items-center gap-2 rounded text-2xl text-white sm:flex"
+          onClick={toggleLanguage}
+        >
+          <img
+            className="h-9 w-9 object-contain"
+            src={language === "en" ? zh : en}
+            alt="language icon"
+          />
+        </button>
         <CgMenu
-          className="absolute right-[7%] top-[20%] size-10 cursor-pointer transition-colors hover:text-primary sm:hidden"
+          className="absolute right-5 top-3 size-10 cursor-pointer transition-colors hover:text-primary sm:hidden"
           onClick={() => setIsOpen(true)}
         />
       </nav>
