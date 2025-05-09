@@ -51,13 +51,13 @@ function ZoomImage({ src, alt }) {
       <img
         src={src}
         alt={alt}
-        className="w-full rounded-custom border border-grayText/25 object-cover transition-transform duration-300"
+        className="w-full rounded-custom border object-cover transition-transform duration-300"
       />
 
       {/* zoom in overlay image */}
       {zoom && (
         <div
-          className="pointer-events-none absolute inset-0 rounded-custom border border-grayText/40 bg-bigzoom bg-no-repeat md:bg-normalzoom transition-transform duration-300"
+          className="pointer-events-none absolute inset-0 rounded-custom border bg-bigzoom bg-no-repeat transition-transform duration-300 md:bg-normalzoom"
           style={{
             backgroundImage: `url(${src})`,
             backgroundPosition: `${position.x}% ${position.y}%`,

@@ -20,7 +20,7 @@ export default function Questions() {
       whileInView="animate"
       viewport={{ once: true }}
       id="questions"
-      className="mx-auto w-full px-4 text-grayText xs:px-6 lg:w-[65rem]"
+      className="mx-auto w-full px-4 text-dark xs:px-6 lg:w-[65rem]"
     >
       {questionsMap.map((question, index) => {
         const isOpen = activeIndex === index;

@@ -18,7 +18,7 @@ export default function Reviews() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mx-auto w-full px-4 text-grayText xs:px-6 lg:w-[65rem]"
+      className="mx-auto w-full px-4 text-dark xs:px-6 lg:w-[65rem]"
       id="reviews"
     >
       <article className="mx-auto flex w-auto max-w-6xl flex-col items-center justify-center gap-10">

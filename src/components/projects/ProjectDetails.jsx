@@ -64,7 +64,7 @@ function ProjectDetails() {
       <ScrollToTop />
 
       <div className="my-12 mt-24 flex flex-col items-center px-3 font-headings xs:px-5">
-        <section className="container text-grayText">
+        <section className="container ">
           <p className="text-center text-[2.3rem] font-medium">
             {project.name}
           </p>
@@ -148,7 +148,7 @@ function ProjectDetails() {
             <p>{project.howItWorksText}</p>
           </div>
 
-          <p className="mb-4 mt-8 text-center font-body text-sm italic text-grayText/65">
+          <p className="mb-4 mt-8 text-center font-body text-sm italic ">
             Hover or Tap to zoom in
           </p>
           {project.flowchart.map((flowchart, index) => (

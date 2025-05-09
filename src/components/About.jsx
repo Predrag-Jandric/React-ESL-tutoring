@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import Button from "../utils/Button.jsx";
+import { useLanguage } from "../utils/LanguageContext.jsx";
 // import devPhoto from "/assets/about/devPhoto.jpg";
 
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <motion.div
       variants={generalVariants}
@@ -13,7 +16,7 @@ export default function About() {
       className="mx-1 flex flex-col items-center px-3 xs:px-5"
       id="about"
     >
-      <section className="container rounded-custom text-grayText transition-all hover:shadow-lg">
+      <section className="container rounded-custom text-dark transition-all hover:shadow-lg">
         <section className="flex flex-col">
           {/* <img
             src={devPhoto}
@@ -22,23 +25,13 @@ export default function About() {
           /> */}
 
           {/* <div className="lg:w-2/3 w-full"> */}
-          <h3 className="mb-4 font-headings text-headings font-medium">
-            asdasas
-          </h3>
-          <p className="text-body">
-            dasdas
-            <br />
-            <br />
-            [say that you are a permanent american expat living in europe most
-            of the time or sometimes in thailand] [say that you are a teacher
-            and a programming developer] [say that you are professional, kind,
-            flexible, patient and love working with students from 5-12 years
-            old]
-            <br />
-            <br />
-            [say that im more than a teacher who does the job and doesnt care, i
-            am a mentor and student's needs and progress comes first ]
-          </p>
+          <h3 className="font-headings text-headings font-medium">{t("aboutheader")}</h3>
+          <div className="mt-7 flex flex-col gap-5 text-body">
+            <p>{t("aboutone")}</p>
+            <p>{t("abouttwo")}</p>
+            <p>{t("aboutthree")}</p>
+          </div>
+
           {/* </div> */}
         </section>
 

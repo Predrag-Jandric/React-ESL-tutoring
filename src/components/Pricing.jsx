@@ -29,10 +29,10 @@ const Pricing = () => {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mx-auto w-full px-4 text-body text-grayText xs:px-6 lg:w-[65rem]"
+      className="mx-auto w-full px-4 text-body text-dark xs:px-6 lg:w-[65rem]"
       id="pricing"
     >
-      <section className="mx-auto max-w-6xl text-dark">
+      <section className="mx-auto max-w-6xl ">
         {/* Package Tiers */}
         <div className="mb-12 grid gap-5 md:grid-cols-3">
           {pricingOptions.map((option, index) => (
@@ -41,14 +41,14 @@ const Pricing = () => {
               className="flex flex-col items-center gap-4 rounded-custom border bg-pureWhite p-6 text-center shadow-md transition hover:shadow-lg"
             >
               <img className="w-28" src={option.img} alt="missing" />
-              <p className="text-3xl font-bold text-grayText">{option.price}</p>
+              <p className="text-3xl font-bold ">{option.price}</p>
               <p>{option.labelKey}</p>
             </div>
           ))}
         </div>
 
         <div className="w-full overflow-x-auto">
-          <h3 className="mb-4 text-grayText text-center text-2xl font-semibold">
+          <h3 className="mb-4  text-center text-2xl font-semibold">
             {t("paymentmethod")}
           </h3>
 

@@ -12,10 +12,10 @@ export default function Projects() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mx-1 flex items-center justify-center"
+      className="mx-1 flex text-dark items-center justify-center"
       id="projects"
     >
-      <div className="grid grid-cols-1 place-items-center gap-20 px-3 text-grayText xs:px-5 lg:grid-cols-2">
+      <div className="grid grid-cols-1 place-items-center gap-20 px-3  xs:px-5 lg:grid-cols-2">
         {projectsMap.map((project, index) => (
           <motion.section
             key={project.id}

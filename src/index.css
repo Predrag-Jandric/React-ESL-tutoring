@@ -7,7 +7,7 @@
     @apply flex w-40 items-center justify-center border border-transparent bg-primary px-6 py-2 text-center font-semibold shadow-md transition duration-300 ease-in-out hover:bg-primaryHover hover:shadow-none;
   }
   .title {
-    @apply relative mx-auto mb-6 mt-16 w-fit text-center font-headings text-[40px] font-bold tracking-wider text-grayText xs:text-5xl;
+    @apply relative mx-auto mb-6 mt-16 w-fit text-center font-headings text-[40px] font-bold tracking-wider text-dark xs:text-5xl;
     /* mt-28 mb-7 */
   }
   .title::after {
