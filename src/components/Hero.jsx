@@ -3,8 +3,11 @@ import { heroVariants } from "../utils/animations.js";
 import Navbar from "./navbar/Navbar";
 import { SlArrowDown } from "react-icons/sl";
 import devPhoto from "/assets/hero/devPhoto.jpg";
+import { useLanguage } from "../utils/LanguageContext.jsx";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   const handleNavClick = (e, href) => {
     e.preventDefault();
     const element = document.getElementById(href);
@@ -28,16 +31,16 @@ export default function Hero() {
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="whitespace-wrap text-[40px] font-bold text-white lg:text-[66px]"
+            className="whitespace-wrap text-[2.813rem] font-bold text-white md:text-[3.438rem] lg:text-[4.375rem]"
           >
-            <span className="text-primary">Frontend</span> developer building
-            apps that shine.
+            <span className="text-primary">{t("heroaccent")}</span>{" "}
+            {t("herotitle")}
           </motion.h2>
           <motion.p
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="pb-3 pt-[40px] text-lg text-neutral-200"
+            className="pb-3 pt-[2.5rem] text-lg text-neutral-200"
           >
             I’ve worked with 4 teams from diverse tech backgrounds to build
             production-ready applications in a professional setting. My

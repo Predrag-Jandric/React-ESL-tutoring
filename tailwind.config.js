@@ -13,10 +13,10 @@ export default {
         dark: "#61656B",
         // dark: "#FF0000",
 
-        bgcolor: "#2F4575", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
+        bgcolor: "#428BCA", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
 
         // primary colors
-        primary: "#ffc654",
+        primary: "#FFC95C",
         primaryHover: "#FFD685",
       },
       // Nunito

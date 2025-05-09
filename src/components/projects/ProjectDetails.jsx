@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 // import { useEffect } from "react";
 import ZoomImage from "../../utils/ZoomImage";
 import { projectsMap } from "../../utils/data";
-import ProjectNotFound from "../projects/ProjectNotFound";
 import ScrollToTop from "../../utils/ScrollToTop";
 import {
   LuPresentation,
@@ -25,8 +24,6 @@ function ProjectDetails() {
       proj.name.toLowerCase().replace(/\s+/g, "-") === decodedProjectName,
   );
 
-  // return custom error component if project is not found
-  if (!project) return <ProjectNotFound />;
 
   // makes sure text is formated correctly
   const howItWorksListArray = project.howItWorksList.split("\n");

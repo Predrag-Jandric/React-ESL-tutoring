@@ -1,18 +1,17 @@
-X Nav.jsx - contains links to all sections
-[STRUCTURE DONE, JUST NEEDS CONTENT]
+[85%] Nav.jsx - added translation logic but needs accurate translation and bg color for desktop and mobile versions
 
-Hero.jsx - explains the value-proposition
+[70%] Hero.jsx - needs subtitle content and translation and background color change to be more positive
 
 [100%] About.jsx
 
 [0% completed] WhatILesson.jsx - should answer the question "What will my child learn?". this section should included Include: Levels you teach (e.g., beginner, intermediate, advanced), Types of lessons (e.g., phonics, grammar, conversation, test prep like IELTS), Any materials you use (Oxford books, custom slides, videos, games). Consider using tabs or cards to separate lesson types (Phonics | Grammar | Conversation | IELTS). Parents love structure, so include example lesson plans or week-by-week improvement chart if possible.
 
-X Reviews.jsx - numbers with autoincrement like numbers of years worked, students teached and lesson conducter. along with an embeded video which is a short compilation of multiple classes switching one after the other as proof that i held classes. [STRUCTURE DONE, JUST NEEDS UPDATED VIDEO CONTENT]
+[80%] Reviews.jsx - numbers with autoincrement like numbers of years worked, students teached and lesson conducter. along with an embeded video which is a short compilation of multiple classes switching one after the other as proof that i held classes. [STRUCTURE DONE, JUST NEEDS UPDATED VIDEO CONTENT]
 
 [100%] Pricing.jsx 
 [100%] Questions.jsx 
 
-X Contact.jsx - contains an encouraging message (like: lets begin). most importantly it contains 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned). WeChat QR code should be big and easy to scan. [STRUCTURE NOT DONE, NEEDS CONTENT FIRST]
+[60%] Contact.jsx - contains an encouraging message (like: lets begin). most importantly it contains 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned). WeChat QR code should be big and easy to scan. [STRUCTURE NOT DONE, NEEDS CONTENT FIRST]
 
 BUY .cn domain
 Register a personal WeChat account (not a business one) and use it for direct contact. Most Chinese parents expect this.

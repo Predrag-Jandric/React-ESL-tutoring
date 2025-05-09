@@ -5,21 +5,22 @@ import { useLanguage } from "../../utils/LanguageContext";
 import en from "/assets/nav/en.png";
 import zh from "/assets/nav/zh.png";
 
-const navLinks = [
-  { href: "reviews", label: "Reviews" },
-  { href: "pricing", label: "Pricing" },
-  { href: "questions", label: "Questions" },
-  { href: "contact", label: "Contact" },
-];
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { t } = useLanguage();
   const { language, setLanguage } = useLanguage();
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "zh" : "en");
   };
+
+  const navLinks = [
+    { href: "courses", label: t("courses") },
+    { href: "reviews", label: t("reviews") },
+    { href: "pricing", label: t("pricing") },
+    { href: "questions", label: t("questions") },
+    { href: "contact", label: t("contact") },
+  ];
 
   const handleNavClick = (e, href) => {
     e.preventDefault();
@@ -48,7 +49,7 @@ function Navbar() {
               >
                 {link.label}
               </a>
-              <span className="absolute left-[10%] top-full z-[-1] h-0.5 w-[80%] scale-0 bg-primary transition duration-300 ease-in-out group-hover:scale-100"></span>
+              <span className="absolute left-[10%] top-full z-[-1] h-1 w-[80%] scale-0 bg-primary transition duration-300 ease-in-out group-hover:scale-100"></span>
             </li>
           ))}
         </ul>

@@ -7,13 +7,6 @@ import en from "/assets/nav/en.png";
 import zh from "/assets/nav/zh.png";
 import { useLanguage } from "../../utils/LanguageContext";
 
-const navLinks = [
-  { href: "reviews", label: "Reviews" },
-  { href: "pricing", label: "Pricing" },
-  { href: "questions", label: "Questions" },
-  { href: "contact", label: "Contact" },
-];
-
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
 
@@ -71,12 +64,20 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
   // const scrollToSection = useScrollTo(170);
   const [clickable, setClickable] = useState(true);
   const scope = useMenuAnimation(isOpen);
-
+  const { t } = useLanguage();
   const { language, setLanguage } = useLanguage();
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "zh" : "en");
   };
+
+  const navLinks = [
+    { href: "courses", label: t("courses") },
+    { href: "reviews", label: t("reviews") },
+    { href: "pricing", label: t("pricing") },
+    { href: "questions", label: t("questions") },
+    { href: "contact", label: t("contact") },
+  ];
 
   useEffect(() => {
     const handleResize = () => {

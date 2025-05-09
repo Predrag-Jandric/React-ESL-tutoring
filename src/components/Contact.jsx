@@ -9,7 +9,7 @@ export default function Contact() {
       whileInView="animate"
       viewport={{ once: true }}
       id="contact"
-      className="relative bg-gradient-to-br from-[#293C66] to-[#3A5692] text-white shadow-md"
+      className="relative bg-bgcolor text-white shadow-md"
     >
       <section className="">
         <h2>Contact</h2>
