@@ -31,9 +31,9 @@ export default function Career() {
         <div className="mx-[1.1rem] w-full max-w-[70rem]">
           <button
             onClick={handleBackClick}
-            className="flex items-center justify-start p-3.5 pl-0 text-xl transition hover:text-primary"
+            className="flex items-center justify-start p-3.5 pl-0 text-2xl transition hover:text-primary"
           >
-            <LuChevronLeft className="size-7" />
+            <LuChevronLeft className="size-8" />
             Back
           </button>
         </div>
