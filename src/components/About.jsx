@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { generalVariants } from "../utils/animations.js";
 import Button from "../utils/Button.jsx";
 import { useLanguage } from "../utils/LanguageContext.jsx";
+import { Link } from "react-router-dom";
 // import devPhoto from "/assets/about/devPhoto.jpg";
 
 export default function About() {
@@ -25,7 +26,9 @@ export default function About() {
           /> */}
 
           {/* <div className="lg:w-2/3 w-full"> */}
-          <h3 className="font-headings text-headings font-medium">{t("aboutheader")}</h3>
+          <h3 className="font-headings text-headings font-medium">
+            {t("aboutheader")}
+          </h3>
           <div className="mt-7 flex flex-col gap-5 text-body">
             <p>{t("aboutone")}</p>
             <p>{t("abouttwo")}</p>
@@ -35,9 +38,11 @@ export default function About() {
           {/* </div> */}
         </section>
 
-        <Button className="mx-auto mt-10 flex w-56 gap-3">
-          view my teaching history
-        </Button>
+        <Link to="/career">
+          <Button className="mx-auto mt-10 flex w-56 gap-3">
+            view my teaching history
+          </Button>
+        </Link>
       </section>
     </motion.div>
   );

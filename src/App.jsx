@@ -2,11 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Title from "./components/Title";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Projects from "./components/projects/Projects";
+import Projects from "./components/Career";
 import Reviews from "./components/Reviews";
 import Questions from "./components/Questions";
 import Contact from "./components/Contact";
-import ProjectDetails from "./components/projects/ProjectDetails";
+import Career from "./components/Career";
 import ScrollToTop from "./utils/ScrollToTop";
 import ScrollToHash from "./utils/ScrollToHash";
 
@@ -27,7 +27,7 @@ export default function App() {
               <About />
               {/* <Title text="Projects" />
               <Projects /> */}
-            
+
               <Title text="Reviews" />
               <Reviews />
               <Title text="Pricing" />
@@ -38,7 +38,7 @@ export default function App() {
             </main>
           }
         />
-        <Route path="/:projectName" element={<ProjectDetails />} />
+        <Route path="/career" element={<Career />} />
       </Routes>
     </Router>
   );
