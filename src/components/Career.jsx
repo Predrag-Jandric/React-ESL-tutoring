@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
-import { projectsVariants, generalVariants } from "../utils/animations.js";
-import Button from "../utils/Button.jsx";
-import { projectsMap } from "../utils/data.js";
-import { IoEnter } from "react-icons/io5";
-
+import { useNavigate } from "react-router-dom";
 import ScrollToTop from "../utils/ScrollToTop.jsx";
 import { LuChevronLeft } from "react-icons/lu";
+import one from "/assets/career/one.png";
+import four from "/assets/career/four.jpg";
+import six from "/assets/career/six.png";
+import two from "/assets/career/two.png";
+import ten from "/assets/career/ten.png";
+import fourteen from "/assets/career/fourteen.png";
 
 export default function Career() {
   const navigate = useNavigate();
@@ -41,12 +41,27 @@ export default function Career() {
 
       <ScrollToTop />
 
-
-      <div className="my-12 mt-24 flex flex-col items-center px-3 font-headings xs:px-5">
-        <section className="container ">
-
-        </section>
+      <section className="mx-auto my-10 mt-24 flex flex-col items-center rounded-md bg-pureWhite px-3 py-5 font-headings shadow-md xs:px-5 lg:w-[65rem]">
+        <h2 className="relative mx-auto mt-4 w-fit text-center font-headings text-[2.25rem] font-bold tracking-wider text-dark after:absolute after:bottom-[-20%] after:left-1/2 after:h-1.5 after:w-20 after:-translate-x-1/2 after:bg-primary xs:text-[2.5rem] xs:after:w-24 lg:text-[3rem] lg:after:w-32">
+          Teaching history
+        </h2>
+        <div className="mt-10 flex flex-col gap-2 text-center text-dark">
+          <h3 className="mt-5 text-3xl italic sm:text-4xl">2019</h3>
+          <img className="rounded-md" src={four} alt="missing" />
+          <h3 className="mt-5 text-3xl italic sm:text-4xl">2020</h3>
+          <img className="rounded-md" src={fourteen} alt="missing" />
+          <h3 className="mt-5 text-3xl italic sm:text-4xl">2021</h3>
+          <img className="rounded-md" src={six} alt="missing" />
+          <h3 className="mt-5 text-3xl italic sm:text-4xl">2022</h3>
+          <img className="rounded-md" src={one} alt="missing" />
+          <h3 className="mt-5 text-3xl italic sm:text-4xl">2023</h3>
+          <img className="rounded-md" src={two} alt="missing" />
+          <h3 className="mt-5 text-3xl italic sm:text-4xl">2024</h3>
+          <img className="rounded-md" src={ten} alt="missing" />
+          {/* <h3 className="mt-5 text-3xl italic sm:text-4xl">2025</h3>
+          <img className="rounded-md" src={} alt="missing" /> */}
         </div>
+      </section>
     </>
   );
 }

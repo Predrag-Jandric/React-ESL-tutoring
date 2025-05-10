@@ -40,7 +40,7 @@ export default function About() {
 
         <Link to="/career">
           <Button className="mx-auto mt-10 flex w-56 gap-3">
-            view my teaching history
+            My teaching history
           </Button>
         </Link>
       </section>

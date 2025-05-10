@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Title from "./components/Title";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Projects from "./components/Career";
 import Reviews from "./components/Reviews";
 import Questions from "./components/Questions";
 import Contact from "./components/Contact";
