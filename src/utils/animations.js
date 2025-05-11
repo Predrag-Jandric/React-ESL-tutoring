@@ -13,23 +13,6 @@ export const heroVariants = {
   },
 };
 
-// animations for PROJECTS section
-export const projectsVariants = {
-  initial: {
-    y: 70,
-    opacity: 0,
-  },
-  animate: (index) => {
-    return {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        delay: 0.05 * index,
-      },
-    };
-  },
-};
 
 // GENERAL animations
 export const generalVariants = {

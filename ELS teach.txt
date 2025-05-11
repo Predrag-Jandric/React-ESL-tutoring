@@ -13,14 +13,14 @@
 [100%] Pricing.jsx 
 [100%] Questions.jsx 
 
-[60%] Contact.jsx - contains an encouraging message (like: lets begin). most importantly it contains 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned). WeChat QR code should be big and easy to scan. [STRUCTURE NOT DONE, NEEDS CONTENT FIRST]
+[60%] Contact.jsx - contains an encouraging message (like: lets begin, ask me any questions). most importantly it contains 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned). WeChat QR code should be big and easy to scan. [STRUCTURE NOT DONE, NEEDS CONTENT FIRST]
 
 BUY .cn domain
 Register a personal WeChat account (not a business one) and use it for direct contact. Most Chinese parents expect this.
 Use Chinese-friendly fonts and video hosts like Youku, Bilibili, 
 
 
-
+new hero: english tutor for you child's success
 
 
 
