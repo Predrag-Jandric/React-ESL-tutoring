@@ -7,8 +7,8 @@ export const translations = {
     questions: "Questions",
     contact: "Contact",
     // hero section
-    heroaccent: "Professional English tutor",
-    herotitle: "for your child",
+    heroaccent: "English tutor",
+    herotitle: "helps your child succeed",
     herosubtitle: "test",
     // about section
     aboutheader: "Fun and focused learning with a teacher who cares",
@@ -18,6 +18,7 @@ export const translations = {
       "My teaching style is clear, structured, and fun. I use a mix of games, storytelling, slides, and other interactive tools. I’m known to be kind, flexible, supportive, and patient, but I also believe in progress and focus. I adapt my style to each student, because for me, teaching isn’t just a job, it’s mentorship.",
     aboutthree:
       "I’m a certified ESL teacher, and I’ve worked at multiple online schools over the years. I also speak a little bit of basic Chinese. When I’m not teaching, I work as a computer programmer, which helps me bring technology into my lessons. Right now, I’m living abroad as a long-term expat, mostly in Europe, and sometimes in Thailand.",
+    teachinghistory: "My Teaching History",
     // reviews section
     yearsofexperience: "Years of experience",
     completedlessons: "Completed lessons",
@@ -96,9 +97,9 @@ export const translations = {
     questions: "问题",
     contact: "联系",
     // hero section
-    heroaccent: "结果",
-    herotitle: "不言而喻",
-    herosubtitle: "test",
+    heroaccent: "英语家教",
+    herotitle: "助您的孩子成功",
+    herosubtitle: "test zh",
     // about section
     aboutheader: "充满乐趣和专注的学习，有一位关心你的老师",
     aboutone:
@@ -107,6 +108,7 @@ export const translations = {
       "我的教学风格清晰、结构化且有趣。我使用游戏、讲故事、幻灯片和其他互动工具的混合。我以善良、灵活、支持和耐心而闻名，但我也相信进步和专注。我根据每个学生的需求调整我的风格，因为对我来说，教学不仅仅是一份工作，而是一种指导。",
     aboutthree:
       "我是一名认证的ESL教师，多年来在多所在线学校工作。我还会说一点基础中文。当我不在教书时，我是一名计算机程序员，这帮助我将技术融入我的课程。目前，我作为长期外籍人士生活在国外，主要在欧洲，有时在泰国。",
+    teachinghistory: "我的教学历史",
     // reviews section
     yearsofexperience: "教学经验年数",
     completedlessons: "已完成课程",

@@ -27,13 +27,13 @@ export default function Reviews() {
           {stats.map(({ number, label, suffix }, i) => (
             <div
               key={i}
-              className="w-full rounded-custom bg-pureWhite px-6 py-4 text-center shadow-md md:flex-1"
+              className={`w-full rounded-custom border-b-4 bg-white px-6 py-4 text-center shadow-md md:flex-1 ${i === 0 && "border-blue-400"} ${i === 1 && "border-green-400"} ${i === 2 && "border-purple-400"} `}
             >
               <span className="text-4xl font-semibold">
                 <CountUp
                   enableScrollSpy
                   scrollSpyOnce
-                  scrollSpyDelay={300}
+                  scrollSpyDelay={400}
                   start={0}
                   end={number}
                   duration={3}

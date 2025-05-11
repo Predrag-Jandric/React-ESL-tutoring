@@ -42,10 +42,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="pb-3 pt-[2.5rem] text-lg text-neutral-200"
           >
-            I’ve worked with 4 teams from diverse tech backgrounds to build
-            production-ready applications in a professional setting. My
-            contributions and team-first mindset were crucial in solving user
-            problems across multiple open-source projects.
+           {t("herosubtitle")}
           </motion.p>
         </div>
 

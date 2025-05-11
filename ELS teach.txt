@@ -20,9 +20,9 @@ Register a personal WeChat account (not a business one) and use it for direct co
 Use Chinese-friendly fonts and video hosts like Youku, Bilibili, 
 
 
-new hero: english tutor for you child's success
+check is nav fixed on all pages
 
-
+#1DBBFF
 
 
 

@@ -10,6 +10,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 import ScrollToHash from "./utils/ScrollToHash";
 
 import Pricing from "./components/Pricing";
+import Curriculum from "./components/Curriculum";
 
 export default function App() {
   return (
@@ -24,8 +25,8 @@ export default function App() {
               <Hero />
               <Title text="About" />
               <About />
-              {/* <Title text="Projects" />
-              <Projects /> */}
+              {/* <Title text="Curriculum" />
+              <Curriculum /> */}
 
               <Title text="Reviews" />
               <Reviews />
