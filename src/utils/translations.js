@@ -1,6 +1,7 @@
 export const translations = {
   en: {
     // nav section
+    backbtn: "Back",
     courses: "Curriculum",
     reviews: "Reviews",
     pricing: "Pricing",
@@ -28,6 +29,12 @@ export const translations = {
       "English Made Easy (Volume 1 & 2) is a simple and fun way to learn English using pictures. Each lesson shows real-life situations with easy words and grammar, so learners understand without feeling stressed. It's great for kids and adults who want to build confidence and learn English step by step. The clear pictures and short sentences help learners connect meaning quickly. It feels more like reading a story than studying, which keeps learners interested and makes it easier to remember what they learn. ",
     incredibleenglish:
       "⭐ Incredible English by Oxfordis a complete 6-level course designed to take children from absolute beginner to advanced English learners. The series combines grammar and vocabulary teaching with engaging topics, colorful illustrations, and fun activities that keep kids interested while learning. The books cover reading, writing, speaking, and listening through clear units, review sections, songs, games, and real-world topics. The full series is great for structured, long-term learning, and I have all 6 books along with their homework companions.",
+    oxfordphonics:
+      "⭐ Oxford Phonics World is a colorful series (5 books and 5 homework books) designed for young beginners to learn English. Focusing on phonics and pronunciation, it helps children understand the sounds of English and how letters and words fit together. With engaging pictures, rhymes, and activities, each level introduces new sounds and letters, making learning fun and interactive. It’s perfect for young learners starting their English journey, building a strong foundation in reading and speaking.",
+    oxfordreadanddiscover:
+      "⭐ Oxford Read and Discover (Many books across 4 levels) is a series that introduces students to the world around them through interesting stories and topics. The books cover subjects like animals, history, and science, helping learners expand their knowledge while improving their English. With colorful illustrations and simple, clear language, this series makes learning fun and informative. Perfect for all students, it encourages curiosity about the world while building reading and language skills.",
+    oxfordreadingtree:
+      "Oxford Reading Tree is a popular series that features short, engaging stories about the adventures of Kipper, Biff, and Chip, three siblings who explore the world around them. Tailored for young learners, the books are designed to help children gradually build their reading skills. With simple text and colorful illustrations, each short story introduces new words and concepts, making it easy for beginners to follow along. ",
     // reviews section
     yearsofexperience: "Years of experience",
     completedlessons: "Completed lessons",
@@ -100,6 +107,7 @@ export const translations = {
   },
   zh: {
     // nav section
+    backbtn: "返回",
     courses: "格题",
     reviews: "评价",
     pricing: "价格",
@@ -127,6 +135,12 @@ export const translations = {
       "轻松学英语》（第 1 卷和第 2 卷）是一种利用图片学习英语的简单而有趣的方法。每节课都以简单的单词和语法展示真实的生活场景，让学习者在理解的同时不会感到压力。它非常适合想要建立自信、循序渐进地学习英语的儿童和成人。清晰的图片和简短的句子有助于学习者快速理解意思。它给人的感觉更像是在读故事，而不是在学习，这能保持学习者的兴趣，让他们更容易记住所学内容。",
     incredibleenglish:
       "⭐ 牛津令人难以置信的英语》是一套完整的 6 级课程，旨在帮助儿童从绝对的初级英语学习者提升到高级英语学习者。这套书将语法和词汇教学与引人入胜的主题、丰富多彩的插图和有趣的活动相结合，让孩子们在学习的同时保持兴趣。这套书通过清晰的单元、复习部分、歌曲、游戏和真实世界的话题，涵盖了阅读、写作、口语和听力。全套丛书非常适合结构化、长期的学习，我拥有全部 6 本丛书及其家庭作业配套。",
+    oxfordphonics:
+      "⭐ 牛津语音世界》（Oxford Phonics World）是一套丰富多彩的系列丛书（5 册和 5 册家庭作业），专为初学英语的儿童设计。它以语音和发音为重点，帮助儿童了解英语的发音以及字母和单词是如何组合在一起的。通过引人入胜的图片、儿歌和活动，每一级都会介绍新的发音和字母，使学习充满乐趣和互动性。它非常适合刚开始学习英语的青少年，为他们的阅读和口语打下坚实的基础。",
+    oxfordreadanddiscover:
+      "⭐ 牛津阅读与发现》（4 个级别的许多书籍）是一套通过有趣的故事和主题向学生介绍周围世界的丛书。图书涵盖动物、历史和科学等主题，帮助学习者在提高英语水平的同时扩展知识面。这套书配有色彩丰富的插图，语言简单明了，使学习充满乐趣和信息量。这套书非常适合所有学生，在培养阅读和语言技能的同时，还能激发他们对世界的好奇心。",
+    oxfordreadingtree:
+      "牛津阅读树》（Oxford Reading Tree）是一套广受欢迎的系列丛书，以简短、引人入胜的故事讲述三兄妹探索周围世界的冒险经历。这套书专为小学生量身定做，旨在帮助孩子逐步提高阅读技能。每个小故事都有简单的文字和色彩鲜艳的插图，介绍新单词和新概念，便于初学者跟读。",
     // reviews section
     yearsofexperience: "教学经验年数",
     completedlessons: "已完成课程",

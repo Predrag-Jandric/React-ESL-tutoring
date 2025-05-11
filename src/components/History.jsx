@@ -9,9 +9,11 @@ import ten from "/assets/history/ten.png";
 import fourteen from "/assets/history/fourteen.png";
 import SkeletonImage from "../utils/SkeletonImage.jsx";
 import placeholder from "/assets/history/placeholder.png";
+import { useLanguage } from "../utils/LanguageContext.jsx";
 
 export default function History() {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const handleBackClick = () => {
     navigate("/");
@@ -36,7 +38,7 @@ export default function History() {
             className="flex items-center justify-start p-3.5 pl-0 text-2xl transition hover:text-primary"
           >
             <LuChevronLeft className="size-8" />
-            Back
+            {t("backbtn")}
           </button>
         </div>
       </nav>
