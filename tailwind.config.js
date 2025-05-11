@@ -33,6 +33,7 @@ export default {
         custom: "5px",
       },
     },
+
     screens: {
       xs: "480px",
       sm: "640px",

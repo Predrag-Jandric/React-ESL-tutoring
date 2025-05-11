@@ -7,6 +7,8 @@ import six from "/assets/career/six.png";
 import two from "/assets/career/two.png";
 import ten from "/assets/career/ten.png";
 import fourteen from "/assets/career/fourteen.png";
+import SkeletonImage from "../utils/SkeletonImage.jsx";
+import placeholder from "/assets/career/placeholder.png";
 
 export default function Career() {
   const navigate = useNavigate();
@@ -47,19 +49,47 @@ export default function Career() {
         </h2>
         <div className="mt-10 flex flex-col gap-2 text-center text-dark">
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2019</h3>
-          <img className="rounded-md" src={four} alt="missing" />
+          <SkeletonImage
+            placeholder={placeholder}
+            src={four}
+            alt="2019"
+            className="rounded-md"
+          />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2020</h3>
-          <img className="rounded-md" src={fourteen} alt="missing" />
+          <SkeletonImage
+            placeholder={placeholder}
+            src={fourteen}
+            alt="2020"
+            className="rounded-md"
+          />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2021</h3>
-          <img className="rounded-md" src={six} alt="missing" />
+          <SkeletonImage
+            placeholder={placeholder}
+            src={six}
+            alt="2021"
+            className="rounded-md"
+          />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2022</h3>
-          <img className="rounded-md" src={one} alt="missing" />
+          <SkeletonImage
+            placeholder={placeholder}
+            src={one}
+            alt="2022"
+            className="rounded-md"
+          />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2023</h3>
-          <img className="rounded-md" src={two} alt="missing" />
+          <SkeletonImage
+            placeholder={placeholder}
+            src={two}
+            alt="2023"
+            className="rounded-md"
+          />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2024</h3>
-          <img className="rounded-md" src={ten} alt="missing" />
-          {/* <h3 className="mt-5 text-3xl italic sm:text-4xl">2025</h3>
-          <img className="rounded-md" src={} alt="missing" /> */}
+          <SkeletonImage
+            placeholder={placeholder}
+            src={ten}
+            alt="2024"
+            className="rounded-md"
+          />
         </div>
       </section>
     </>

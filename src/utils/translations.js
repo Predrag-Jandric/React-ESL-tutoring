@@ -7,8 +7,8 @@ export const translations = {
     questions: "Questions",
     contact: "Contact",
     // hero section
-    heroaccent: "Results",
-    herotitle: "that speak for themselves",
+    heroaccent: "Professional English tutor",
+    herotitle: "for your child",
     herosubtitle: "test",
     // about section
     aboutheader: "Fun and focused learning with a teacher who cares",
