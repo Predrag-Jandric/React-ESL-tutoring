@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom"
+
 function Curriculum() {
     return (
-        <div>
-            
+        <div id="curriculum">   
+
+            <Link to="/details" >details</Link>
         </div>
     )
 }

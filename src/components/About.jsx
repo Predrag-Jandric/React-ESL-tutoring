@@ -38,7 +38,7 @@ export default function About() {
           {/* </div> */}
         </section>
 
-        <Link to="/career">
+        <Link to="/history">
           <Button className="mx-auto mt-10 flex w-56 gap-3">
             {t("teachinghistory")}
           </Button>

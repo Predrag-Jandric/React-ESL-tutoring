@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     // nav section
-    courses: "Courses",
+    courses: "Curriculum",
     reviews: "Reviews",
     pricing: "Pricing",
     questions: "Questions",
@@ -19,6 +19,8 @@ export const translations = {
     aboutthree:
       "I’m a certified ESL teacher, and I’ve worked at multiple online schools over the years. I also speak a little bit of basic Chinese. When I’m not teaching, I work as a computer programmer, which helps me bring technology into my lessons. Right now, I’m living abroad as a long-term expat, mostly in Europe, and sometimes in Thailand.",
     teachinghistory: "My Teaching History",
+    // curriculum details
+    cambidge: "Kid’s Box by Cambridge is a fun English course made just for young children. It helps kids learn English step by step, from simple words to full sentences, in a way that’s easy and enjoyable. The lessons include listening, speaking, reading, and writing, so your child gets a full learning experience. Parents love this course because it’s colorful, fun, and keeps children interested. It uses games, songs, and friendly characters to make learning feel like playtime. Kid’s Box also follows the same topics and skills used in Cambridge exams for kids, so your child builds strong English skills with confidence, even if they’re just starting out. I’ve got everything ready: full series books, homework books, and videos",
     // reviews section
     yearsofexperience: "Years of experience",
     completedlessons: "Completed lessons",
@@ -109,6 +111,8 @@ export const translations = {
     aboutthree:
       "我是一名认证的ESL教师，多年来在多所在线学校工作。我还会说一点基础中文。当我不在教书时，我是一名计算机程序员，这帮助我将技术融入我的课程。目前，我作为长期外籍人士生活在国外，主要在欧洲，有时在泰国。",
     teachinghistory: "我的教学历史",
+     // curriculum details
+    cambidge: "剑桥的 Kid's Box 是专为幼儿设计的趣味英语课程。它帮助孩子们循序渐进地学习英语，从简单的单词到完整的句子，轻松愉快。课程包括听、说、读和写，让孩子获得全面的学习体验。家长们喜欢这套课程，因为它色彩丰富、生动有趣，能让孩子们兴趣盎然。它使用游戏、歌曲和友好的角色，让学习感觉就像游戏时间一样。Kid's Box 还沿用了剑桥少儿英语考试中使用的相同主题和技能，因此即使您的孩子刚刚开始学习，也能自信地掌握扎实的英语技能。我已经准备好了一切：全套丛书、作业本和视频。",
     // reviews section
     yearsofexperience: "教学经验年数",
     completedlessons: "已完成课程",

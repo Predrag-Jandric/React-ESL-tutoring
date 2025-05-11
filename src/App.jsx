@@ -5,12 +5,13 @@ import About from "./components/About";
 import Reviews from "./components/Reviews";
 import Questions from "./components/Questions";
 import Contact from "./components/Contact";
-import Career from "./components/Career";
+import History from "./components/History";
 import ScrollToTop from "./utils/ScrollToTop";
 import ScrollToHash from "./utils/ScrollToHash";
 
 import Pricing from "./components/Pricing";
 import Curriculum from "./components/Curriculum";
+import CurriculumDetails from "./components/CurriculumDetails";
 
 export default function App() {
   return (
@@ -25,8 +26,8 @@ export default function App() {
               <Hero />
               <Title text="About" />
               <About />
-              {/* <Title text="Curriculum" />
-              <Curriculum /> */}
+              <Title text="Curriculum" />
+              <Curriculum />
 
               <Title text="Reviews" />
               <Reviews />
@@ -38,7 +39,9 @@ export default function App() {
             </main>
           }
         />
-        <Route path="/career" element={<Career />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/details" element={<CurriculumDetails />} />
+
       </Routes>
     </Router>
   );

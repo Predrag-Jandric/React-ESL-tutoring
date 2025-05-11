@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   const navLinks = [
-    { href: "courses", label: t("courses") },
+    { href: "curriculum", label: t("courses") },
     { href: "reviews", label: t("reviews") },
     { href: "pricing", label: t("pricing") },
     { href: "questions", label: t("questions") },
