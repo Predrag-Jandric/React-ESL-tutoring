@@ -2,6 +2,11 @@ import { useNavigate } from "react-router-dom";
 import ScrollToTop from "../utils/ScrollToTop.jsx";
 import { LuChevronLeft } from "react-icons/lu";
 import cambridgekidsbox from "/assets/curriculum/cambridgekidsbox.png";
+import englishforeveryone from "/assets/curriculum/englishforeveryone.png";
+import englishmadeeasy from "/assets/curriculum/englishmadeeasy.png";
+
+import incredibleenglish from "/assets/curriculum/incredibleenglish.png";
+
 import placeholder from "/assets/history/placeholder.png";
 import { useLanguage } from "../utils/LanguageContext.jsx";
 import SkeletonImage from "../utils/SkeletonImage.jsx";
@@ -44,15 +49,35 @@ export default function CurriculumDetails() {
         <h2 className="relative mx-auto mt-4 w-fit text-center font-headings text-[2.25rem] font-bold tracking-wider text-dark after:absolute after:bottom-[-20%] after:left-1/2 after:h-1.5 after:w-20 after:-translate-x-1/2 after:bg-primary xs:text-[2.5rem] xs:after:w-24 lg:text-[3rem] lg:after:w-32">
           Curriculum Details
         </h2>
-        <div className="mt-10 text-body flex flex-col gap-2 text-left text-dark">
-          <p className="mt-5 mb-2">{t("cambidge")}</p>
+        <div className="mt-10 flex flex-col gap-2 text-left text-body text-dark">
+          <p className="mb-2 mt-5">{t("cambidge")}</p>
           <SkeletonImage
             placeholder={placeholder}
             src={cambridgekidsbox}
-            alt="2019"
+            alt="missing"
             className="rounded-md"
           />
-         
+          <p className="mb-2 mt-5">{t("englishforeveryone")}</p>
+          <SkeletonImage
+            placeholder={placeholder}
+            src={englishforeveryone}
+            alt="missing"
+            className="rounded-md"
+          />
+          <p className="mb-2 mt-5">{t("englishmadeeasy")}</p>
+          <SkeletonImage
+            placeholder={placeholder}
+            src={englishmadeeasy}
+            alt="missing"
+            className="rounded-md"
+          />
+          <p className="mb-2 mt-5">{t("incredibleenglish")}</p>
+          <SkeletonImage
+            placeholder={placeholder}
+            src={incredibleenglish}
+            alt="missing"
+            className="rounded-md"
+          />
         </div>
       </section>
     </>

@@ -20,7 +20,14 @@ export const translations = {
       "I’m a certified ESL teacher, and I’ve worked at multiple online schools over the years. I also speak a little bit of basic Chinese. When I’m not teaching, I work as a computer programmer, which helps me bring technology into my lessons. Right now, I’m living abroad as a long-term expat, mostly in Europe, and sometimes in Thailand.",
     teachinghistory: "My Teaching History",
     // curriculum details
-    cambidge: "Kid’s Box by Cambridge is a fun English course made just for young children. It helps kids learn English step by step, from simple words to full sentences, in a way that’s easy and enjoyable. The lessons include listening, speaking, reading, and writing, so your child gets a full learning experience. Parents love this course because it’s colorful, fun, and keeps children interested. It uses games, songs, and friendly characters to make learning feel like playtime. Kid’s Box also follows the same topics and skills used in Cambridge exams for kids, so your child builds strong English skills with confidence, even if they’re just starting out. I’ve got everything ready: full series books, homework books, and videos",
+    cambidge:
+      "⭐ Kid’s Box by Cambridge is a fun English course made just for young children. It helps kids learn English step by step, from simple words to full sentences, in a way that’s easy and enjoyable. The lessons include listening, speaking, reading, and writing, so your child gets a full learning experience. Parents love this course because it’s colorful, fun, and keeps children interested. It uses games, songs, and friendly characters to make learning feel like playtime. Kid’s Box also follows the same topics and skills used in Cambridge exams for kids, so your child builds strong English skills with confidence, even if they’re just starting out. I’ve got everything ready: full series books, homework books, and videos",
+    englishforeveryone:
+      "English for Everyone: Grammar Guide is a great book for learners who already know the basics and want to go deeper. It’s full of colorful charts and clear visuals that make even complex grammar rules easier to follow. This guide covers everything from verb tenses and sentence structure to more advanced grammar topics. It’s designed for older students or more serious learners who want a strong understanding of how English works. It's not too easy, so it's perfect for learners ready to challenge themselves and improve their grammar step by step.",
+    englishmadeeasy:
+      "English Made Easy (Volume 1 & 2) is a simple and fun way to learn English using pictures. Each lesson shows real-life situations with easy words and grammar, so learners understand without feeling stressed. It's great for kids and adults who want to build confidence and learn English step by step. The clear pictures and short sentences help learners connect meaning quickly. It feels more like reading a story than studying, which keeps learners interested and makes it easier to remember what they learn. ",
+    incredibleenglish:
+      "⭐ Incredible English by Oxfordis a complete 6-level course designed to take children from absolute beginner to advanced English learners. The series combines grammar and vocabulary teaching with engaging topics, colorful illustrations, and fun activities that keep kids interested while learning. The books cover reading, writing, speaking, and listening through clear units, review sections, songs, games, and real-world topics. The full series is great for structured, long-term learning, and I have all 6 books along with their homework companions.",
     // reviews section
     yearsofexperience: "Years of experience",
     completedlessons: "Completed lessons",
@@ -111,8 +118,15 @@ export const translations = {
     aboutthree:
       "我是一名认证的ESL教师，多年来在多所在线学校工作。我还会说一点基础中文。当我不在教书时，我是一名计算机程序员，这帮助我将技术融入我的课程。目前，我作为长期外籍人士生活在国外，主要在欧洲，有时在泰国。",
     teachinghistory: "我的教学历史",
-     // curriculum details
-    cambidge: "剑桥的 Kid's Box 是专为幼儿设计的趣味英语课程。它帮助孩子们循序渐进地学习英语，从简单的单词到完整的句子，轻松愉快。课程包括听、说、读和写，让孩子获得全面的学习体验。家长们喜欢这套课程，因为它色彩丰富、生动有趣，能让孩子们兴趣盎然。它使用游戏、歌曲和友好的角色，让学习感觉就像游戏时间一样。Kid's Box 还沿用了剑桥少儿英语考试中使用的相同主题和技能，因此即使您的孩子刚刚开始学习，也能自信地掌握扎实的英语技能。我已经准备好了一切：全套丛书、作业本和视频。",
+    // curriculum details
+    cambidge:
+      "⭐ 剑桥的 Kid's Box 是专为幼儿设计的趣味英语课程。它帮助孩子们循序渐进地学习英语，从简单的单词到完整的句子，轻松愉快。课程包括听、说、读和写，让孩子获得全面的学习体验。家长们喜欢这套课程，因为它色彩丰富、生动有趣，能让孩子们兴趣盎然。它使用游戏、歌曲和友好的角色，让学习感觉就像游戏时间一样。Kid's Box 还沿用了剑桥少儿英语考试中使用的相同主题和技能，因此即使您的孩子刚刚开始学习，也能自信地掌握扎实的英语技能。我已经准备好了一切：全套丛书、作业本和视频。",
+    englishforeveryone:
+      "人人都会说英语： 语法指南》是一本非常适合已经掌握基础知识并希望深入学习的学习者的书籍。书中有丰富多彩的图表和清晰的视觉效果，即使是复杂的语法规则也更容易掌握。本指南涵盖了从动词时态和句子结构到更高级语法主题的所有内容。它专为高年级学生或希望深入了解英语运作方式的认真学习者而设计。它并不简单，因此非常适合准备挑战自我并逐步提高语法水平的学习者。",
+    englishmadeeasy:
+      "轻松学英语》（第 1 卷和第 2 卷）是一种利用图片学习英语的简单而有趣的方法。每节课都以简单的单词和语法展示真实的生活场景，让学习者在理解的同时不会感到压力。它非常适合想要建立自信、循序渐进地学习英语的儿童和成人。清晰的图片和简短的句子有助于学习者快速理解意思。它给人的感觉更像是在读故事，而不是在学习，这能保持学习者的兴趣，让他们更容易记住所学内容。",
+    incredibleenglish:
+      "⭐ 牛津令人难以置信的英语》是一套完整的 6 级课程，旨在帮助儿童从绝对的初级英语学习者提升到高级英语学习者。这套书将语法和词汇教学与引人入胜的主题、丰富多彩的插图和有趣的活动相结合，让孩子们在学习的同时保持兴趣。这套书通过清晰的单元、复习部分、歌曲、游戏和真实世界的话题，涵盖了阅读、写作、口语和听力。全套丛书非常适合结构化、长期的学习，我拥有全部 6 本丛书及其家庭作业配套。",
     // reviews section
     yearsofexperience: "教学经验年数",
     completedlessons: "已完成课程",
