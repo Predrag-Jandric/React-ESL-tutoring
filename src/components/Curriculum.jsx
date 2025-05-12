@@ -8,6 +8,8 @@ import oned from "/assets/curriculum/oned.jpg";
 import twod from "/assets/curriculum/twod.png";
 import threed from "/assets/curriculum/threed.jpg";
 import fourd from "/assets/curriculum/fourd.jpg";
+import fived from "/assets/curriculum/fived.jpg";
+import sixd from "/assets/curriculum/sixd.jpg";
 
 function Curriculum() {
   const { t } = useLanguage();
@@ -17,7 +19,7 @@ function Curriculum() {
   const slides = [
     {
       id: 1,
-      image: oned,
+      image: fived,
     },
     {
       id: 2,
@@ -28,8 +30,16 @@ function Curriculum() {
       image: threed,
     },
     {
-      id: 3,
+      id: 4,
       image: fourd,
+    },
+    {
+      id: 5,
+      image: oned,
+    },
+    {
+      id: 6,
+      image: sixd,
     },
   ];
 
@@ -50,14 +60,14 @@ function Curriculum() {
       id="curriculum"
     >
       <section className="container rounded-custom text-dark transition-all hover:shadow-lg">
-        <section className="flex flex-col gap-3 lg:flex-row">
+        <section className="flex flex-col items-center gap-3 lg:flex-row">
           <div className="w-full lg:w-2/3">
             <h3 className="font-headings text-headings font-medium">
               {t("curriculumheader")}
             </h3>
             <div className="mt-7 flex flex-col gap-5 text-body">
-              <p>{t("aboutone")}</p>
-              <p>{t("abouttwo")}</p>
+              <p>{t("curriculumone")}</p>
+              <p>{t("curriculumtwo")}</p>
             </div>
           </div>
 
@@ -91,25 +101,24 @@ function Curriculum() {
             </div>
 
             {/* dot navigation  */}
-            <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 transform space-x-2">
+            <div className="absolute bottom-0.5 left-1/2 z-20 flex -translate-x-1/2 transform space-x-2">
               {slides.map((_, index) => (
-                <button
+                <div
                   key={index}
-                  className={`size-2.5 cursor-pointer rounded-full ${
-                    index === currentSlide ? "bg-white" : "bg-gray-400"
+                  className={`size-2 rounded-full ${
+                    index === currentSlide ? "bg-blue-400" : "bg-gray-300"
                   }`}
-                  onClick={() => setCurrentSlide(index)}
-                ></button>
+                ></div>
               ))}
             </div>
           </div>
         </section>
 
-        <Link to="/details">
-          <Button className="mx-auto mt-10 flex w-56 gap-3">
+        <Button className="mx-auto mt-10 flex w-56 gap-3 px-0 py-0">
+          <Link className="w-full px-6 py-2" to="/details">
             {t("curriculumdetailsbtn")}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </section>
     </motion.div>
   );

@@ -7,6 +7,7 @@ import six from "/assets/history/six.png";
 import two from "/assets/history/two.png";
 import ten from "/assets/history/ten.png";
 import fourteen from "/assets/history/fourteen.png";
+import fifteen from "/assets/history/fifteen.png";
 import SkeletonImage from "../utils/SkeletonImage.jsx";
 import placeholder from "/assets/history/placeholder.png";
 import { useLanguage } from "../utils/LanguageContext.jsx";
@@ -57,6 +58,7 @@ export default function History() {
             alt="2019"
             className="rounded-md"
           />
+          <hr className="border border-gray-300" />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2020</h3>
           <SkeletonImage
             placeholder={placeholder}
@@ -64,6 +66,7 @@ export default function History() {
             alt="2020"
             className="rounded-md"
           />
+          <hr className="border border-gray-300" />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2021</h3>
           <SkeletonImage
             placeholder={placeholder}
@@ -71,6 +74,7 @@ export default function History() {
             alt="2021"
             className="rounded-md"
           />
+          <hr className="border border-gray-300" />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2022</h3>
           <SkeletonImage
             placeholder={placeholder}
@@ -78,6 +82,7 @@ export default function History() {
             alt="2022"
             className="rounded-md"
           />
+          <hr className="border border-gray-300" />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2023</h3>
           <SkeletonImage
             placeholder={placeholder}
@@ -85,6 +90,7 @@ export default function History() {
             alt="2023"
             className="rounded-md"
           />
+          <hr className="border border-gray-300" />
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2024</h3>
           <SkeletonImage
             placeholder={placeholder}
@@ -92,6 +98,15 @@ export default function History() {
             alt="2024"
             className="rounded-md"
           />
+          <hr className="border border-gray-300" />
+          <h3 className="mt-5 text-3xl italic sm:text-4xl">2025</h3>
+          <SkeletonImage
+            placeholder={placeholder}
+            src={fifteen}
+            alt="2024"
+            className="rounded-md"
+          />
+          <hr className="border border-gray-300" />
         </div>
       </section>
     </>

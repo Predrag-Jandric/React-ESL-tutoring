@@ -23,8 +23,10 @@ export const translations = {
     teachinghistory: "My Teaching History",
     // curriculum
     curriculumheader: "The best curriculum for your child",
-    curriculumone: "",
-    curriculumtwo: "",
+    curriculumone:
+      "I use a variety of professional English learning materials from Oxford and Cambridge. For young learners, the books are fun and easy to get started with. As learners get older, the materials slowly introduce more grammar, vocabulary, and real-world topics. I work with students on all levels: beginner, intermediate, and advanced too. In the demo lesson, I assess the student's level and choose the curriculum that fits their skills best.",
+    curriculumtwo:
+      "The books have lots of pictures and clear explanations to help make harder ideas easier to understand. Everything is designed to keep learners motivated and help them with all four pillars of language learning: listening, speaking, reading, and writing.",
     curriculumdetailsbtn: "Details",
     // curriculum details page
     cambidge:
@@ -135,8 +137,10 @@ export const translations = {
     teachinghistory: "我的教学历史",
     // curriculum
     curriculumheader: "最适合您孩子的课程",
-    curriculumone: "",
-    curriculumtwo: "",
+    curriculumone:
+      "我使用牛津和剑桥的各种专业英语学习材料。对于年幼的学习者来说，这些书籍既有趣又容易入门。随着学习者年龄的增长，教材会慢慢引入更多的语法、词汇和现实世界的话题。我的教学对象包括所有级别的学生：初级、中级和高级。在演示课上，我会评估学生的水平，并选择最适合他们技能的课程。",
+    curriculumtwo:
+      "书中有大量的图片和清晰的解释，使较难理解的观点更容易理解。一切设计都是为了保持学习者的积极性，帮助他们掌握语言学习的四大支柱：听、说、读、写。",
     curriculumdetailsbtn: "详情",
     // curriculum details page
     cambidge:

@@ -2,9 +2,9 @@
 
 [70%] Hero.jsx - needs subtitle content and translation and background image change to be more positive
 
-[100%] About.jsx
+[95%] About.jsx - add TEFL or TESOL instead of "I’m a certified ESL teacher"
 
-[95%] History.jsx (just needs a 2025 image)
+[100%] History.jsx
 
 [0% completed] WhatILesson.jsx - should answer the question "What will my child learn?". this section should included Include: Levels you teach (e.g., beginner, intermediate, advanced), Types of lessons (e.g., phonics, grammar, conversation, test prep like IELTS), Any materials you use (Oxford books, custom slides, videos, games). Consider using tabs or cards to separate lesson types (Phonics | Grammar | Conversation | IELTS). Parents love structure, so include example lesson plans or week-by-week improvement chart if possible.
 

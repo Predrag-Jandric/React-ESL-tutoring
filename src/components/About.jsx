@@ -38,11 +38,11 @@ export default function About() {
           {/* </div> */}
         </section>
 
-        <Link to="/history">
-          <Button className="mx-auto mt-10 flex w-56 gap-3">
+        <Button className="mx-auto mt-10 flex w-56 gap-3 px-0 py-0">
+          <Link className="w-full px-6 py-2" to="/history">
             {t("teachinghistory")}
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </section>
     </motion.div>
   );
