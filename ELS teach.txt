@@ -1,4 +1,4 @@
-[85%] Nav.jsx - added translation logic but needs accurate translations and bg color for desktop and mobile versions
+[95%] Nav.jsx - bg color needs to be added for desktop and mobile versions
 
 [70%] Hero.jsx - needs subtitle content and translation and background color change to be more positive
 

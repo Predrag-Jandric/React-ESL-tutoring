@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   const navLinks = [
-    { href: "curriculum", label: t("courses") },
+    { href: "curriculum", label: t("curriculum") },
     { href: "reviews", label: t("reviews") },
     { href: "pricing", label: t("pricing") },
     { href: "questions", label: t("questions") },
@@ -45,7 +45,7 @@ function Navbar() {
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="relative cursor-pointer px-5 py-2 text-xl text-white transition duration-200 ease-in-out group-hover:before:scale-100"
+                className="whitespace-nowrap relative cursor-pointer px-5 py-2 text-xl text-white transition duration-200 ease-in-out group-hover:before:scale-100"
               >
                 {link.label}
               </a>

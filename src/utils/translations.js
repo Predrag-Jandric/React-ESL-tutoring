@@ -2,7 +2,8 @@ export const translations = {
   en: {
     // nav section
     backbtn: "Back",
-    courses: "Curriculum",
+    about: "About",
+    curriculum: "Curriculum",
     reviews: "Reviews",
     pricing: "Pricing",
     questions: "Questions",
@@ -108,11 +109,12 @@ export const translations = {
   zh: {
     // nav section
     backbtn: "返回",
-    courses: "格题",
-    reviews: "评价",
-    pricing: "价格",
+    about: "关于我",
+    curriculum: "课程设置",
+    reviews: "回顾",
+    pricing: "定价",
     questions: "问题",
-    contact: "联系",
+    contact: "联系我",
     // hero section
     heroaccent: "英语家教",
     herotitle: "助您的孩子成功",

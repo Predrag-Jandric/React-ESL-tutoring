@@ -12,8 +12,10 @@ import ScrollToHash from "./utils/ScrollToHash";
 import Pricing from "./components/Pricing";
 import Curriculum from "./components/Curriculum";
 import CurriculumDetails from "./components/CurriculumDetails";
+import { useLanguage } from "./utils/LanguageContext";
 
 export default function App() {
+  const { t } = useLanguage();
   return (
     <Router>
       <ScrollToTop />
@@ -24,16 +26,16 @@ export default function App() {
           element={
             <main className="m-0 box-border flex list-none flex-col gap-10 scroll-smooth p-0 font-body no-underline outline-none">
               <Hero />
-              <Title text="About" />
+              <Title text={t("about")} />
               <About />
-              <Title text="Curriculum" />
+              <Title text={t("curriculum")} />
               <Curriculum />
 
-              <Title text="Reviews" />
+              <Title text={t("reviews")} />
               <Reviews />
-              <Title text="Pricing" />
+              <Title text={t("pricing")} />
               <Pricing />
-              <Title text="Questions" />
+              <Title text={t("questions")} />
               <Questions />
               <Contact />
             </main>
@@ -41,7 +43,6 @@ export default function App() {
         />
         <Route path="/history" element={<History />} />
         <Route path="/details" element={<CurriculumDetails />} />
-
       </Routes>
     </Router>
   );
