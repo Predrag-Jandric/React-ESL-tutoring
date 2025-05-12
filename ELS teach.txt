@@ -1,6 +1,6 @@
 [95%] Nav.jsx - bg color needs to be added for desktop and mobile versions
 
-[70%] Hero.jsx - needs subtitle content and translation and background color change to be more positive
+[70%] Hero.jsx - needs subtitle content and translation and background image change to be more positive
 
 [100%] About.jsx
 
