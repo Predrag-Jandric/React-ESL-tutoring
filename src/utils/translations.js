@@ -22,6 +22,9 @@ export const translations = {
       "I’m a certified ESL teacher, and I’ve worked at multiple online schools over the years. I also speak a little bit of basic Chinese. When I’m not teaching, I work as a computer programmer, which helps me bring technology into my lessons. Right now, I’m living abroad as a long-term expat, mostly in Europe, and sometimes in Thailand.",
     teachinghistory: "My Teaching History",
     // curriculum
+    curriculumheader: "The best curriculum for your child",
+    curriculumone: "",
+    curriculumtwo: "",
     curriculumdetailsbtn: "Details",
     // curriculum details page
     cambidge:
@@ -131,6 +134,9 @@ export const translations = {
       "我是一名认证的ESL教师，多年来在多所在线学校工作。我还会说一点基础中文。当我不在教书时，我是一名计算机程序员，这帮助我将技术融入我的课程。目前，我作为长期外籍人士生活在国外，主要在欧洲，有时在泰国。",
     teachinghistory: "我的教学历史",
     // curriculum
+    curriculumheader: "最适合您孩子的课程",
+    curriculumone: "",
+    curriculumtwo: "",
     curriculumdetailsbtn: "详情",
     // curriculum details page
     cambidge:
