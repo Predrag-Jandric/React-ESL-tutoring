@@ -40,7 +40,7 @@ export default function About() {
 
         <Button className="mx-auto mt-10 flex w-56 gap-3 px-0 py-0">
           <Link className="w-full px-6 py-2" to="/history">
-            {t("teachinghistory")}
+            {t("teachinghistorybtn")}
           </Link>
         </Button>
       </section>

@@ -2,13 +2,10 @@
 
 [70%] Hero.jsx - needs subtitle content and translation and background image change to be more positive
 
-[95%] About.jsx - add TEFL or TESOL instead of "I’m a certified ESL teacher"
-
-[100%] History.jsx
-
-[0% completed] WhatILesson.jsx - should answer the question "What will my child learn?". this section should included Include: Levels you teach (e.g., beginner, intermediate, advanced), Types of lessons (e.g., phonics, grammar, conversation, test prep like IELTS), Any materials you use (Oxford books, custom slides, videos, games). Consider using tabs or cards to separate lesson types (Phonics | Grammar | Conversation | IELTS). Parents love structure, so include example lesson plans or week-by-week improvement chart if possible.
-
-[100%] CurriculumDetails.jsx
+[100%] About.jsx
+  |---- [100%] History.jsx
+[100%] Curriculum.jsx
+  |----[100%] CurriculumDetails.jsx
 
 [80%] Reviews.jsx - needs an updated video 
 
@@ -21,12 +18,7 @@ BUY .cn domain
 Register a personal WeChat account (not a business one) and use it for direct contact. Most Chinese parents expect this.
 Use Chinese-friendly fonts and video hosts like Youku, Bilibili, 
 
-
-check is nav fixed on all pages
-
-#1DBBFF
-
-
+DL chinese browser and test responsivness
 
 
 

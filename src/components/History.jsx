@@ -48,7 +48,7 @@ export default function History() {
 
       <section className="mx-auto my-10 mt-24 flex flex-col items-center rounded-md bg-pureWhite px-3 py-5 font-headings shadow-md xs:px-5 lg:w-[65rem]">
         <h2 className="relative mx-auto mt-4 w-fit text-center font-headings text-[2.25rem] font-bold tracking-wider text-dark after:absolute after:bottom-[-20%] after:left-1/2 after:h-1.5 after:w-20 after:-translate-x-1/2 after:bg-primary xs:text-[2.5rem] xs:after:w-24 lg:text-[3rem] lg:after:w-32">
-          Teaching History
+          {t("teachinghistory")}
         </h2>
         <div className="mt-10 flex flex-col gap-2 text-center text-dark">
           <h3 className="mt-5 text-3xl italic sm:text-4xl">2019</h3>

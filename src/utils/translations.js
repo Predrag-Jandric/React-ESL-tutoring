@@ -1,26 +1,28 @@
 export const translations = {
   en: {
-    // nav section
+    // nav section & titles
     backbtn: "Back",
     about: "About",
+    teachinghistory: "Teaching History",
     curriculum: "Curriculum",
+    curriculumdetails: "Curriculum Details",
     reviews: "Reviews",
     pricing: "Pricing",
     questions: "Questions",
     contact: "Contact",
     // hero section
     heroaccent: "English tutor",
-    herotitle: "helps your child succeed",
+    herotitle: "who helps your child succeed",
     herosubtitle: "test",
     // about section
     aboutheader: "Fun and focused learning with a teacher who cares",
     aboutone:
-      "Hi! I’m an American English teacher with years of experience teaching wonderful Chinese students, especially those aged 5 to 12. I’ve worked with all kinds of learners, from complete beginners to more advanced students.",
+      "Hi I’m an American teacher with years of experience teaching English to wonderful Chinese students, especially those aged 5 to 12. I’ve worked with all kinds of learners, from complete beginners to more advanced students.",
     abouttwo:
       "My teaching style is clear, structured, and fun. I use a mix of games, storytelling, slides, and other interactive tools. I’m known to be kind, flexible, supportive, and patient, but I also believe in progress and focus. I adapt my style to each student, because for me, teaching isn’t just a job, it’s mentorship.",
     aboutthree:
-      "I’m a certified ESL teacher, and I’ve worked at multiple online schools over the years. I also speak a little bit of basic Chinese. When I’m not teaching, I work as a computer programmer, which helps me bring technology into my lessons. Right now, I’m living abroad as a long-term expat, mostly in Europe, and sometimes in Thailand.",
-    teachinghistory: "My Teaching History",
+      "I’m a TESOL-certified teacher and have taught at multiple Chinese online schools, as well as through freelance tutoring over the years. I also speak a little basic Chinese. When I’m not teaching, I work as a computer programmer, which helps me bring technology into my lessons. These days, I live abroad as a long-term expat, mostly in Europe, and sometimes in Thailand.",
+    teachinghistorybtn: "My Teaching History",
     // curriculum
     curriculumheader: "The best curriculum for your child",
     curriculumone:
@@ -114,27 +116,29 @@ export const translations = {
     ],
   },
   zh: {
-    // nav section
+    // nav section & titles
     backbtn: "返回",
     about: "关于我",
+    teachinghistory: "教学历史",
     curriculum: "课程设置",
+    curriculumdetails: "课程详情",
     reviews: "回顾",
     pricing: "定价",
     questions: "问题",
     contact: "联系我",
     // hero section
     heroaccent: "英语家教",
-    herotitle: "助您的孩子成功",
+    herotitle: "帮助您的孩子取得成功",
     herosubtitle: "test zh",
     // about section
     aboutheader: "充满乐趣和专注的学习，有一位关心你的老师",
     aboutone:
-      "嗨！我是一名美国英语老师，拥有多年的教学经验，教授过许多优秀的中国学生，尤其是5到12岁的学生。我曾与各种学习者合作，从完全的初学者到更高级的学生。",
+      "大家好，我是一名美国教师，有多年教授中国学生（尤其是 5 到 12 岁的学生）英语的经验。我教过各种类型的学生，从初学者到高年级学生。",
     abouttwo:
       "我的教学风格清晰、结构化且有趣。我使用游戏、讲故事、幻灯片和其他互动工具的混合。我以善良、灵活、支持和耐心而闻名，但我也相信进步和专注。我根据每个学生的需求调整我的风格，因为对我来说，教学不仅仅是一份工作，而是一种指导。",
     aboutthree:
-      "我是一名认证的ESL教师，多年来在多所在线学校工作。我还会说一点基础中文。当我不在教书时，我是一名计算机程序员，这帮助我将技术融入我的课程。目前，我作为长期外籍人士生活在国外，主要在欧洲，有时在泰国。",
-    teachinghistory: "我的教学历史",
+      "我是一名获得 TESOL 认证的教师，曾在多家中文在线学校任教，多年来还从事自由家教工作。我还会说一点基本的中文。不授课时，我是一名计算机程序员，这有助于我将技术融入课程。如今，我作为长期外籍人士生活在国外，大部分时间在欧洲，有时也去泰国。",
+    teachinghistorybtn: "我的教学历史",
     // curriculum
     curriculumheader: "最适合您孩子的课程",
     curriculumone:
