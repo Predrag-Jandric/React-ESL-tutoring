@@ -31,13 +31,13 @@ export default function App() {
               <Title text={t("curriculum")} />
               <Curriculum />
 
-              {/* <Title text={t("reviews")} />
+              <Title text={t("reviews")} />
               <Reviews />
               <Title text={t("pricing")} />
               <Pricing />
               <Title text={t("questions")} />
               <Questions />
-              <Contact /> */}
+              <Contact />
             </main>
           }
         />

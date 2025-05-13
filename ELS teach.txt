@@ -6,9 +6,7 @@
   |---- [100%] History.jsx
 [100%] Curriculum.jsx
   |----[100%] CurriculumDetails.jsx
-
-[80%] Reviews.jsx - needs an updated video 
-
+[100%] Reviews.jsx  
 [100%] Pricing.jsx 
 [100%] Questions.jsx 
 

@@ -48,7 +48,7 @@ export default function Reviews() {
 
         <video
           className="rounded-custom bg-white object-cover shadow-md"
-          src="/assets/reviews/example.mp4"
+          src="/assets/reviews/compilation.mp4"
           poster="/assets/reviews/reviewsposter.png"
           playsInline
           controls
