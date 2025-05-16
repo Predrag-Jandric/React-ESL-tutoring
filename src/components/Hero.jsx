@@ -46,25 +46,27 @@ export default function Hero() {
           >
             {t("herosubtitle")}
           </motion.p>
-        </div>
-
-        <img
-          src={devPhoto}
-          className="mb-20 w-80 rounded-full border border-[#38bdf8] object-cover lg:mb-0"
-          alt="developer photo"
-        />
-      </div>
-
-      <motion.div
+          <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.2 }}
         viewport={{ once: true }}
+        className="flex items-center justify-center mt-5 lg:block"
       >
-        <Button onClick={(e) => handleNavClick(e, "about")} className="">
+        <Button onClick={(e) => handleNavClick(e, "about")} className="w-56">
           {t("herolearnmorebtn")}
         </Button>
       </motion.div>
+        </div>
+
+        <img
+          src={devPhoto}
+          className="mt-5 w-80 rounded-full border border-[#38bdf8] object-cover "
+          alt="developer photo"
+        />
+      </div>
+
+      
     </header>
   );
 }

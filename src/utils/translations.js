@@ -13,7 +13,8 @@ export const translations = {
     // hero section
     heroaccent: "English tutor",
     herotitle: "who helps your child succeed",
-    herosubtitle: "",
+    herosubtitle:
+      "I am a friendly and experienced Native english teacher who helps Chinese children (ages 5-12) build solid English skills, gain confidence and enjoy learning. I use high quality materials along with fun games, technology tools and clear lessons, all at a good price. Each lesson is personalized so your child can make real progress and feel proud of their success.",
     herolearnmorebtn: "Learn More",
     // about section
     aboutheader: "Fun and focused learning with a teacher who cares",
@@ -130,7 +131,8 @@ export const translations = {
     // hero section
     heroaccent: "英语家教",
     herotitle: "帮助您的孩子取得成功",
-    herosubtitle: "test zh",
+    herosubtitle:
+      "我是一名友好、经验丰富的母语英语教师，帮助中国儿童（5-12 岁）掌握扎实的英语技能，增强自信心，享受学习的乐趣。我使用高质量的教材、有趣的游戏、技术工具和清晰的课程，所有这些都物美价廉。每节课都是个性化的，因此您的孩子可以取得真正的进步，并为自己的成功感到自豪。",
     herolearnmorebtn: "了解更多",
     // about section
     aboutheader: "充满乐趣和专注的学习，有一位关心你的老师",

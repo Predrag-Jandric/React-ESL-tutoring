@@ -1,7 +1,5 @@
 [100%] Nav.jsx 
-
-[90%] Hero.jsx - needs subtitle content and translation and, add native english speaker
-
+[100%] Hero.jsx 
 [100%] About.jsx
   |---- [100%] History.jsx
 [100%] Curriculum.jsx
