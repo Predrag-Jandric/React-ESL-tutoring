@@ -20,7 +20,7 @@ export default function CurriculumDetails() {
   const handleBackClick = () => {
     navigate("/");
     setTimeout(() => {
-      const element = document.getElementById("about");
+      const element = document.getElementById("curriculum");
       if (element) {
         const topPosition = element.offsetTop - 230;
         window.scrollTo({

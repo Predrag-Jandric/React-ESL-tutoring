@@ -13,7 +13,8 @@ export const translations = {
     // hero section
     heroaccent: "English tutor",
     herotitle: "who helps your child succeed",
-    herosubtitle: "test",
+    herosubtitle: "",
+    herolearnmorebtn: "Learn More",
     // about section
     aboutheader: "Fun and focused learning with a teacher who cares",
     aboutone:
@@ -130,6 +131,7 @@ export const translations = {
     heroaccent: "英语家教",
     herotitle: "帮助您的孩子取得成功",
     herosubtitle: "test zh",
+    herolearnmorebtn: "了解更多",
     // about section
     aboutheader: "充满乐趣和专注的学习，有一位关心你的老师",
     aboutone:

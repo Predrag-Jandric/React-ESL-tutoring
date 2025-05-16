@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply flex w-40 items-center justify-center border border-transparent bg-primary px-6 py-2 text-center font-semibold shadow-md transition duration-300 ease-in-out hover:bg-primaryHover hover:shadow-none;
+    @apply hover:bg-bgcolorhover flex w-40 items-center justify-center border border-transparent bg-bgcolor px-6 py-2.5 text-center text-lg font-medium text-white shadow-md transition duration-300 ease-in-out hover:shadow-none;
   }
   .title {
     @apply relative mx-auto mb-6 mt-16 w-fit text-center font-headings text-[2.5rem] font-bold tracking-wider text-dark xs:text-5xl;
