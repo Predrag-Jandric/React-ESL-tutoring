@@ -14,7 +14,7 @@ const Pricing = () => {
   const paymentTranslations = t("paymentoptions");
   const paymentMethods = paymentTranslations.map((item, index) => ({
     ...item,
-    img: [card, moneygram, bitcoin][index], 
+    img: [card, moneygram, bitcoin][index],
   }));
 
   const pricingOptions = [
@@ -32,7 +32,7 @@ const Pricing = () => {
       className="mx-auto w-full px-4 text-body text-dark xs:px-6 lg:w-[65rem]"
       id="pricing"
     >
-      <section className="mx-auto max-w-6xl ">
+      <section className="mx-auto max-w-6xl">
         {/* Package Tiers */}
         <div className="mb-12 grid gap-5 md:grid-cols-3">
           {pricingOptions.map((option, index) => (
@@ -41,14 +41,14 @@ const Pricing = () => {
               className="flex flex-col items-center gap-4 rounded-custom border bg-pureWhite p-6 text-center shadow-md transition hover:shadow-lg"
             >
               <img className="w-28" src={option.img} alt="missing" />
-              <p className="text-3xl font-bold ">{option.price}</p>
+              <p className="text-3xl font-bold">{option.price}</p>
               <p>{option.labelKey}</p>
             </div>
           ))}
         </div>
 
         <div className="w-full overflow-x-auto">
-          <h3 className="mb-4  text-center text-2xl font-semibold">
+          <h3 className="mb-4 text-center text-2xl font-semibold">
             {t("paymentmethod")}
           </h3>
 
@@ -57,7 +57,9 @@ const Pricing = () => {
             <table className="w-full">
               <thead className="bg-slate-50">
                 <tr className="">
-                  <th className="p-3 text-left font-medium">{t("methodtable")}</th>
+                  <th className="p-3 text-left font-medium">
+                    {t("methodtable")}
+                  </th>
                   <th className="p-3 text-center font-medium text-green-600">
                     {t("positivetable")}
                   </th>

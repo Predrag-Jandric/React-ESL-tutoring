@@ -21,8 +21,10 @@ export default function Hero() {
     }
   };
 
+  // bg-[url('/assets/hero/background.png')]
+
   return (
-    <header className="bg-cover relative min-h-screen bg-[url('/assets/hero/background.png')] p-[2.5rem] px-5 text-pureWhite shadow-md lg:px-20 lg:py-[3.75rem] xl:px-36">
+    <header className="bg-primary relative min-h-screen p-[2.5rem] px-5 text-pureWhite shadow-md lg:px-20 lg:py-[3.75rem] xl:px-36">
       <Navbar />
 
       <div className="flex flex-col items-center justify-between gap-6 pt-[4.5rem] text-center md:pt-[7rem] lg:flex-row lg:text-start">
@@ -31,24 +33,24 @@ export default function Hero() {
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="whitespace-wrap text-[2.813rem] font-bold text-white md:text-[3.438rem] lg:text-[4.375rem]"
+            className="whitespace-wrap text-[2.813rem] font-bold text-dark md:text-[3.438rem] lg:text-[4.375rem]"
           >
-            <span className="text-primary">{t("heroaccent")}</span>{" "}
+            <span className="text-bgcolor">{t("heroaccent")}</span>{" "}
             {t("herotitle")}
           </motion.h2>
           <motion.p
             initial={heroVariants.initial}
             animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="pb-3 pt-[2.5rem] text-lg text-neutral-200"
+            className="pb-3 pt-[2.5rem] text-lg text-dark"
           >
-           {t("herosubtitle")}
+            {t("herosubtitle")}
           </motion.p>
         </div>
 
         <img
           src={devPhoto}
-          className="mb-20 w-80 rounded-full object-cover lg:mb-0"
+          className="mb-20 border-2 border-[#38bdf8] w-80 rounded-full object-cover lg:mb-0"
           alt="developer photo"
         />
       </div>

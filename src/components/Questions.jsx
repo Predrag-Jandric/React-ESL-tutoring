@@ -32,7 +32,7 @@ export default function Questions() {
             key={index}
           >
             <p
-              className={`${isOpen ? "border-blue-400" : "border-transparent"} flex cursor-pointer items-center justify-between gap-5 border-l-4 bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-slate-50`}
+              className={`${isOpen ? "border-bgcolor" : "border-transparent"} flex cursor-pointer items-center justify-between gap-5 border-l-4 bg-pureWhite px-6 py-4 text-body font-medium transition-all hover:bg-slate-50`}
               onClick={() => toggleQuestion(index)}
             >
               {question.question}

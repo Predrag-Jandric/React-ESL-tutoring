@@ -14,7 +14,7 @@ export default function About() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mx-1 flex flex-col items-center px-3 xs:px-5"
+      className="mx-auto lg:w-[65rem] flex flex-col items-center px-3 xs:px-5"
       id="about"
     >
       <section className="container rounded-custom text-dark transition-all hover:shadow-lg">

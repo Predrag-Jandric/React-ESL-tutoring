@@ -37,15 +37,15 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 z-50 flex h-16 w-full items-center justify-center bg-dark bg-opacity-95 backdrop-blur-sm">
-        <ul className="relative hidden items-center justify-center gap-0 transition duration-200 ease-in-out sm:flex">
+      <nav className="fixed shadow-md border-b border-gray-400 left-0  right-0 top-0 z-50 flex h-16 w-full items-center justify-center bg-pureWhite bg-opacity-95 backdrop-blur-sm">
+        <ul className="relative hidden items-center justify-center gap-0 transition duration-200 ease-in-out md:flex">
           {navLinks.map((link, index) => (
             <li key={index} className="group relative z-10 flex w-full">
               <a
                 rel="noopener noreferrer"
                 href={`#${link.href}`}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="whitespace-nowrap relative cursor-pointer px-5 py-2 text-xl text-white transition duration-200 ease-in-out group-hover:before:scale-100"
+                className="whitespace-nowrap relative cursor-pointer px-5 py-2 text-xl text-dark transition duration-200 ease-in-out group-hover:before:scale-100"
               >
                 {link.label}
               </a>
@@ -54,7 +54,7 @@ function Navbar() {
           ))}
         </ul>
         <button
-          className="absolute right-5 top-3 hidden size-10 cursor-pointer items-center gap-2 rounded text-2xl text-white sm:flex"
+          className="absolute right-5 top-3 hidden size-10 cursor-pointer items-center gap-2 rounded text-2xl text-white md:flex"
           onClick={toggleLanguage}
         >
           <img
@@ -64,7 +64,7 @@ function Navbar() {
           />
         </button>
         <CgMenu
-          className="absolute right-5 top-3 size-10 cursor-pointer transition-colors hover:text-primary sm:hidden"
+          className="absolute right-5 top-3 size-10 cursor-pointer transition-colors text-bgcolor hover:text-dark md:hidden"
           onClick={() => setIsOpen(true)}
         />
       </nav>

@@ -56,7 +56,7 @@ function Curriculum() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mx-1 flex flex-col items-center px-3 xs:px-5"
+      className="mx-auto flex flex-col items-center px-3 xs:px-5 lg:w-[65rem]"
       id="curriculum"
     >
       <section className="container rounded-custom text-dark transition-all hover:shadow-lg">
@@ -71,7 +71,7 @@ function Curriculum() {
             </div>
           </div>
 
-          <div className="relative w-80 overflow-hidden rounded-custom">
+          <div className="relative w-fit md:w-80 overflow-hidden rounded-custom">
             <div
               className="flex transition-transform duration-700 ease-in-out"
               style={{
