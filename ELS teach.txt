@@ -8,11 +8,10 @@
 [100%] Pricing.jsx 
 [100%] Questions.jsx 
 
-[80%] Contact.jsx - needs: 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned).
+[80%] Contact.jsx - needs: 1. WeChat ID and a QR code image 
 
 Use Chinese-friendly video hosts like Youku, Bilibili, 
 
-DL chinese browser and test responsivness
 
 
 
