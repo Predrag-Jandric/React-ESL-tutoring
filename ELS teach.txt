@@ -8,7 +8,7 @@
 [100%] Pricing.jsx 
 [100%] Questions.jsx 
 
-[60%] Contact.jsx - contains an encouraging message (like: lets begin, ask me any questions). most importantly it contains 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned). WeChat QR code should be big and easy to scan. [STRUCTURE NOT DONE, NEEDS CONTENT FIRST]
+[80%] Contact.jsx - needs: 1. WeChat ID and a QR code image 2. email adress (use Chinese-friendly provider like Outlook.com or 163.com, gmail is banned).
 
 Use Chinese-friendly video hosts like Youku, Bilibili, 
 

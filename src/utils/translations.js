@@ -116,6 +116,8 @@ export const translations = {
           "I give feedback often, so you’ll always know how your child is doing and what we’re working on. If you'd like, I can also give homework or fun practice ideas.",
       },
     ],
+    // contact section
+    contacttitle: "Contact me, let's learn together",
   },
   zh: {
     // nav section & titles
@@ -231,5 +233,7 @@ export const translations = {
           "我会经常提供反馈，让您知道孩子的进展情况和我们正在学习的内容。如果您愿意，我也可以布置一些轻松的作业或有趣的练习建议。",
       },
     ],
+    // contact section
+    contacttitle: "联系我，让我们一起学习",
   },
 };

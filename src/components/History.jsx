@@ -32,7 +32,7 @@ export default function History() {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 z-50 flex h-[8vh] w-full items-center justify-center bg-dark bg-opacity-95 font-body text-white shadow-md backdrop-blur-sm">
+      <nav className="fixed left-0 right-0 top-0 z-50 flex h-[8vh] w-full items-center justify-center bg-bgcolor bg-opacity-95 font-body text-white shadow-md backdrop-blur-sm">
         <div className="mx-[1.1rem] w-full max-w-[70rem]">
           <button
             onClick={handleBackClick}
