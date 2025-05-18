@@ -62,7 +62,7 @@ function Curriculum() {
       <section className="container rounded-custom text-dark transition-all hover:shadow-lg">
         <section className="flex flex-col items-center gap-3 lg:flex-row">
           <div className="w-full lg:w-2/3">
-            <h3 className="font-headings text-headings font-medium">
+            <h3 className="text-headings font-medium">
               {t("curriculumheader")}
             </h3>
             <div className="mt-7 flex flex-col gap-5 text-body">
@@ -71,7 +71,7 @@ function Curriculum() {
             </div>
           </div>
 
-          <div className="relative w-fit md:w-80 overflow-hidden rounded-custom">
+          <div className="relative w-fit overflow-hidden rounded-custom md:w-80">
             <div
               className="flex transition-transform duration-700 ease-in-out"
               style={{

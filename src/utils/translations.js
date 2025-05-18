@@ -17,7 +17,7 @@ export const translations = {
       "I am a friendly and experienced Native english teacher who helps Chinese children (ages 5-12) build solid English skills, gain confidence and enjoy learning. I use high quality materials along with fun games, technology tools and clear lessons, all at a good price. Each lesson is personalized so your child can make real progress and feel proud of their success.",
     herolearnmorebtn: "Learn More",
     // about section
-    aboutheader: "Fun and focused learning with a teacher who cares",
+    aboutheader: "Fun and focused learning with a teacher who cares.",
     aboutone:
       "Hi I’m an American teacher with years of experience teaching English to wonderful Chinese students, especially those aged 5 to 12. I’ve worked with all kinds of learners, from complete beginners to more advanced students.",
     abouttwo:
@@ -26,7 +26,7 @@ export const translations = {
       "I’m a TESOL-certified teacher and have taught at multiple Chinese online schools, as well as through freelance tutoring over the years. I also speak a little basic Chinese. When I’m not teaching, I work as a computer programmer, which helps me bring technology into my lessons. These days, I live abroad as a long-term expat, mostly in Europe, and sometimes in Thailand.",
     teachinghistorybtn: "My Teaching History",
     // curriculum
-    curriculumheader: "The best curriculum for your child",
+    curriculumheader: "The best curriculum for your child.",
     curriculumone:
       "I use a variety of professional English learning materials from Oxford and Cambridge. For young learners, the books are fun and easy to get started with. As learners get older, the materials slowly introduce more grammar, vocabulary, and real-world topics. I work with students on all levels: beginner, intermediate, and advanced too. In the demo lesson, I assess the student's level and choose the curriculum that fits their skills best.",
     curriculumtwo:
@@ -137,7 +137,7 @@ export const translations = {
       "我是一名友好、经验丰富的母语英语教师，帮助中国儿童（5-12 岁）掌握扎实的英语技能，增强自信心，享受学习的乐趣。我使用高质量的教材、有趣的游戏、技术工具和清晰的课程，所有这些都物美价廉。每节课都是个性化的，因此您的孩子可以取得真正的进步，并为自己的成功感到自豪。",
     herolearnmorebtn: "了解更多",
     // about section
-    aboutheader: "充满乐趣和专注的学习，有一位关心你的老师",
+    aboutheader: "充满乐趣和专注的学习，有一位关心你的老师。",
     aboutone:
       "大家好，我是一名美国教师，有多年教授中国学生（尤其是 5 到 12 岁的学生）英语的经验。我教过各种类型的学生，从初学者到高年级学生。",
     abouttwo:
@@ -146,7 +146,7 @@ export const translations = {
       "我是一名获得 TESOL 认证的教师，曾在多家中文在线学校任教，多年来还从事自由家教工作。我还会说一点基本的中文。不授课时，我是一名计算机程序员，这有助于我将技术融入课程。如今，我作为长期外籍人士生活在国外，大部分时间在欧洲，有时也去泰国。",
     teachinghistorybtn: "我的教学历史",
     // curriculum
-    curriculumheader: "最适合您孩子的课程",
+    curriculumheader: "最适合您孩子的课程。",
     curriculumone:
       "我使用牛津和剑桥的各种专业英语学习材料。对于年幼的学习者来说，这些书籍既有趣又容易入门。随着学习者年龄的增长，教材会慢慢引入更多的语法、词汇和现实世界的话题。我的教学对象包括所有级别的学生：初级、中级和高级。在演示课上，我会评估学生的水平，并选择最适合他们技能的课程。",
     curriculumtwo:

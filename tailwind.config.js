@@ -10,7 +10,7 @@ export default {
 
         // variables
         white: "#f1f1f1",
-        dark: "#61656B",
+        dark: "#6B6F76",
         // dark: "#FF0000",
 
         bgcolor: "#0ea5e9", // bg color for certain sections, this same color is used in https://patternico.com/#meM0W5EUKUjVsnNY to create a hero pattern
@@ -20,11 +20,10 @@ export default {
         primary: "#FFC95C",
         primaryHover: "#FFD685",
       },
-      // Nunito
+
       // "Comic Sans MS" for testing
       fontFamily: {
-        headings: ["Work Sans", "sans-serif"],
-        body: ["Nunito", "sans-serif"],
+        special: ["Noto Sans SC", "Comic Sans MS"],
       },
       fontSize: {
         headings: "1.5rem",

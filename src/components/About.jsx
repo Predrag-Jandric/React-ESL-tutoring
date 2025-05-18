@@ -14,7 +14,7 @@ export default function About() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mx-auto lg:w-[65rem] flex flex-col items-center px-3 xs:px-5"
+      className="mx-auto flex flex-col items-center px-3 xs:px-5 lg:w-[65rem]"
       id="about"
     >
       <section className="container rounded-custom text-dark transition-all hover:shadow-lg">
@@ -26,9 +26,7 @@ export default function About() {
           /> */}
 
           {/* <div className="lg:w-2/3 w-full"> */}
-          <h3 className="font-headings text-headings font-medium">
-            {t("aboutheader")}
-          </h3>
+          <h3 className="text-headings font-medium">{t("aboutheader")}</h3>
           <div className="mt-7 flex flex-col gap-5 text-body">
             <p>{t("aboutone")}</p>
             <p>{t("abouttwo")}</p>

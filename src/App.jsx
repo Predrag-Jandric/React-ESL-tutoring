@@ -24,7 +24,7 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main className="m-0 box-border flex list-none flex-col gap-10 scroll-smooth p-0 font-body no-underline outline-none">
+            <main className="m-0 box-border flex list-none flex-col gap-10 scroll-smooth p-0 font-special no-underline outline-none">
               <Hero />
               <Title text={t("about")} />
               <About />

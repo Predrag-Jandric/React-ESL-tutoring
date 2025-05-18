@@ -28,7 +28,7 @@ export default function Hero() {
       <Navbar />
 
       <div className="flex flex-col items-center justify-between gap-6 pt-[4.5rem] text-center md:pt-[7rem] lg:flex-row lg:text-start">
-        <div className="w-full px-3 font-headings lg:w-[75%] xl:w-[60%]">
+        <div className="w-full px-3 lg:w-[75%] xl:w-[60%]">
           <motion.h2
             initial={heroVariants.initial}
             animate={heroVariants.animate}
@@ -47,26 +47,27 @@ export default function Hero() {
             {t("herosubtitle")}
           </motion.p>
           <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1.2 }}
-        viewport={{ once: true }}
-        className="flex items-center justify-center mt-5 lg:block"
-      >
-        <Button onClick={(e) => handleNavClick(e, "about")} className="w-56">
-          {t("herolearnmorebtn")}
-        </Button>
-      </motion.div>
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+            viewport={{ once: true }}
+            className="mt-5 flex items-center justify-center lg:block"
+          >
+            <Button
+              onClick={(e) => handleNavClick(e, "about")}
+              className="w-56"
+            >
+              {t("herolearnmorebtn")}
+            </Button>
+          </motion.div>
         </div>
 
         <img
           src={devPhoto}
-          className="mt-5 w-80 rounded-full border border-[#38bdf8] object-cover "
+          className="mt-5 w-80 rounded-full border border-[#38bdf8] object-cover"
           alt="developer photo"
         />
       </div>
-
-      
     </header>
   );
 }

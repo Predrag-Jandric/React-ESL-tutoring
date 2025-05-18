@@ -17,7 +17,7 @@ export default function Contact() {
       className="relative bg-bgcolor text-white shadow-md"
     >
       <section className="flex flex-col items-center justify-between p-[40px] px-5 text-center lg:flex-row lg:items-start lg:px-20 lg:py-[60px] lg:text-start xl:px-56">
-        <div className="w-full px-3 font-headings lg:w-[75%] xl:w-[60%]">
+        <div className="w-full px-3 lg:w-[75%] xl:w-[60%]">
           <h2 className="whitespace-wrap mb-10 text-[40px] font-semibold text-primary">
             {t("contacttitle")}
           </h2>
