@@ -23,7 +23,7 @@ export default {
 
       // "Comic Sans MS" for testing
       fontFamily: {
-        special: ["Noto Sans SC", "Comic Sans MS"],
+        special: ["Noto Sans SC", "sans-serif"],
       },
       fontSize: {
         headings: "1.5rem",
